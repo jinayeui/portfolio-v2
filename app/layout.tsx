@@ -8,7 +8,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: '정지나 | Web Publisher',
-  description: '웹 퍼블리셔 포트폴리오입니다.',
+  description: '웹 퍼블리셔 정지나입니다.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
