@@ -1,0 +1,105 @@
+.section {
+  padding: 8rem 1.5rem;
+  width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.sectionLabel .labelText {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--primary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.sectionLabel .labelLine {
+  flex: 1;
+  height: 1px;
+  background: var(--secondary);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 5rem;
+}
+
+.careerList {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.careerList .careerItem {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.careerList .careerItem:last-child {
+  border-bottom: none;
+}
+
+.careerList .careerHeader .period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--gray-dark);
+  letter-spacing: 0.08em;
+}
+
+.careerList .careerHeader .company {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.careerList .careerHeader .role {
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+.careerList .careerDesc li {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.45rem;
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.careerList .careerDesc li:last-child {
+  margin-bottom: 0;
+}
+
+.careerList .careerDesc li .bullet {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 1.25rem;
+  }
+
+  .careerList {
+    gap: 3rem;
+  }
+
+  .careerList .careerItem {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+}

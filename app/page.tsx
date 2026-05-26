@@ -1,0 +1,26 @@
+'use client';
+
+import { useReveal } from '@/hooks/useReveal';
+import Header from '@/components/Header';
+import Intro from '@/components/Intro';
+import Career from '@/components/Career';
+import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+
+export default function Home() {
+  useReveal();
+
+  return (
+    <>
+      <Header />
+      <main>
+        <Intro />
+        <Career />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  );
+}
