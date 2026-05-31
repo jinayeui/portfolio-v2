@@ -20,7 +20,7 @@ export default function Projects() {
 
         <div className={styles.btnProjects}>
           <a
-            href='https://rigorous-cough-355.notion.site/36bd01abf5d58089b1cdc6dfb8e7dc2b?source=copy_link'
+            href='https://foggy-napkin-4b2.notion.site/3716da1da01180f7b323c3198d588343?source=copy_link'
             target='_blank'
             rel='noopener noreferrer'
             aria-label='경력기술서 열기'
