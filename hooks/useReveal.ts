@@ -12,7 +12,7 @@ export function useReveal() {
           }
         });
       },
-      { threshold: 0.3, rootMargin: '0px 0px -60px 0px' }
+      { threshold: 0.3 }
     );
 
     const elements = document.querySelectorAll('.reveal');

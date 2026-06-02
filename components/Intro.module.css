@@ -121,10 +121,6 @@
 }
 
 @media (max-width: 768px) {
-  .section {
-    padding: 80px 1.25rem 0;
-  }
-
   .deco {
     display: none;
   }
