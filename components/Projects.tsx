@@ -6,7 +6,7 @@ import styles from './Projects.module.css';
 
 export default function Projects() {
   return (
-    <section id='projects' className={`${styles.section} reveal`}>
+    <section id='projects' className={`${styles.section} reveal`} data-threshold='0.1'>
       <div className={styles.sectionLabel}>
         <span className={styles.labelText}>02. Projects</span>
         <div className={styles.labelLine} />
