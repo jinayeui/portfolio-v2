@@ -59,7 +59,7 @@ export default function Header() {
               rel='noopener noreferrer'
               className={styles.navLink}
             >
-              Github
+              GitHub
             </a>
           </li>
         </ul>
