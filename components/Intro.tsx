@@ -8,20 +8,20 @@ export default function Intro() {
     <section id='intro' className={styles.section}>
       {/* <span className={styles.deco} /> */}
 
-      <p className={styles.yearTag}>
-        ✦ {new Date().getFullYear()} Portfolio
+      <p className={styles.subtitle}>
+        ✦ {personalInfo.role}
       </p>
 
       <h1 className={styles.title}>
-        {personalInfo.name}
+        JINA's
         <br />
-        <em>Publisher</em>
+        <em>PORTFOLIO</em>
       </h1>
 
-      <div className={styles.badge}>
+      {/* <div className={styles.badge}>
         <span className={styles.badgeDot} />
         <p className={styles.badgeText}>{personalInfo.role}</p>
-      </div>
+      </div> */}
 
       <div className={styles.scrollIndicator}>
         <span className={styles.scrollLine} />

@@ -26,14 +26,24 @@ export default function Career() {
               <p className={styles.role}>{career.role}</p>
             </div>
 
-            <ul className={styles.careerDesc}>
-              {career.description.map((item, i) => (
-                <li key={i}>
-                  <span className={styles.bullet}>›</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <div className={styles.careerBody}>
+              <ul className={styles.desc}>
+                {career.description.map((item, i) => (
+                  <li key={i}>
+                    <span className={styles.bullet}>›</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              {career.techStack && career.techStack.length > 0 && (
+                <ul className={styles.techStack}>
+                  {career.techStack.map((tech, i) => (
+                    <li key={i}>{tech}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </article>
         ))}
       </div>

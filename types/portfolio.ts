@@ -5,7 +5,7 @@ export interface Project {
   contribution?: string;
   description?: string;
   tags: string[];
-  url: string;
+  url?: string;
   thumbnail?: string;
   period: string;
 }
@@ -21,8 +21,6 @@ export interface Career {
 export interface PersonalInfo {
   name: string;
   role: string;
-  tagline?: string;
   email: string;
-  github?: string;
-  summary?: string;
+  github: string;
 }
