@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const project = projects.find((p) => p.id === id);
   return {
-    title: project ? `${project.title} | 정지나` : '프로젝트 | 정지나',
+    title: project ? `${project.title} | JINA's Portfolio` : `PROJECT | JINA's Portfolio`,
   };
 }
 

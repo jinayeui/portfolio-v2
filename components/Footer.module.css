@@ -4,7 +4,7 @@
 }
 
 .text {
-  font-family: var(--font-mono);
+  font-family: var(--font-code);
   font-size: 0.72rem;
   color: var(--gray-dark);
   text-align: center;

@@ -6,14 +6,14 @@ import styles from './Projects.module.css';
 
 export default function Projects() {
   return (
-    <section id='projects' className={`${styles.section} reveal`} data-threshold='0.1'>
+    <section id='projects' className={styles.section}>
       <div className={styles.sectionLabel}>
-        <span className={styles.labelText}>02. Projects</span>
+        <p className={styles.labelText} data-aos="fade-left">02. Projects</p>
         <div className={styles.labelLine} />
       </div>
 
       <div className={styles.headerRow}>
-        <h2 className={styles.title}>
+        <h2 className={styles.title} data-aos="fade-up" data-aos-delay="200">
           Work<br />
           Archive
         </h2>
@@ -30,7 +30,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <ul className={styles.projectList}>
+      <ul className={styles.projectList} data-aos="fade-up">
         {projects.map((project) => {
           const isExternal = !!project.url;
           return (

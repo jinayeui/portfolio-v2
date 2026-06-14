@@ -5,13 +5,13 @@ import styles from './Career.module.css';
 
 export default function Career() {
   return (
-    <section id='career' className={`${styles.section} reveal`}>
+    <section id='career' className={styles.section}>
       <div className={styles.sectionLabel}>
-        <span className={styles.labelText}>01. Career</span>
+        <p className={styles.labelText} data-aos="fade-left">01. Career</p>
         <div className={styles.labelLine} />
       </div>
 
-      <h2 className={styles.title}>
+      <h2 className={styles.title} data-aos="fade-up" data-aos-delay="200">
         Work
         <br />
         Experience
@@ -20,14 +20,14 @@ export default function Career() {
       <div className={styles.careerList}>
         {careers.map((career, idx) => (
           <article key={idx} className={styles.careerItem}>
-            <div className={styles.careerHeader}>
+            <div className={styles.careerHeader} data-aos="fade-up">
               <p className={styles.period}>{career.period}</p>
               <h3 className={styles.company}>{career.company}</h3>
               <p className={styles.role}>{career.role}</p>
             </div>
 
             <div className={styles.careerBody}>
-              <ul className={styles.desc}>
+              <ul className={styles.desc} data-aos="fade-left">
                 {career.description.map((item, i) => (
                   <li key={i}>
                     <span className={styles.bullet}>›</span>
@@ -37,7 +37,7 @@ export default function Career() {
               </ul>
 
               {career.techStack && career.techStack.length > 0 && (
-                <ul className={styles.techStack}>
+                <ul className={styles.techStack} data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
                   {career.techStack.map((tech, i) => (
                     <li key={i}>{tech}</li>
                   ))}

@@ -12,7 +12,7 @@ export default function Home() {
   useReveal();
 
   return (
-    <>
+    <div id="wrap">
       <Header />
       <main>
         <Intro />
@@ -21,6 +21,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

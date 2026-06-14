@@ -12,7 +12,7 @@
 }
 
 .sectionLabel .labelText {
-  font-family: var(--font-mono);
+  font-family: var(--font-code);
   font-size: 0.7rem;
   color: var(--primary);
   letter-spacing: 0.15em;
@@ -36,7 +36,7 @@
 }
 
 .headerRow .title {
-  font-family: var(--font-display);
+  font-family: var(--font-eng);
   font-size: clamp(2rem, 8vw, 4rem);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -47,11 +47,12 @@
   justify-content: center;
   align-items: center;
   gap: 0.6rem;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
   border: 1px solid var(--secondary);
   background-color: var(--surface);
   color: var(--gray);
-  font-family: var(--font-mono);
+  font-family: var(--font-code);
   font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-decoration: none;
@@ -76,7 +77,6 @@
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  background-color: var(--surface-2);
   border-radius: 10px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .projectList .desc .subtit {
-  font-family: var(--font-mono);
+  font-family: var(--font-code);
   font-size: 0.7rem;
   color: var(--white);
   letter-spacing: 0.08em;
@@ -107,7 +107,7 @@
 }
 
 .projectList .desc .tit {
-  font-family: var(--font-body);
+  font-family: var(--font-default);
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--white);

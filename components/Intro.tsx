@@ -18,15 +18,7 @@ export default function Intro() {
         <em>PORTFOLIO</em>
       </h1>
 
-      {/* <div className={styles.badge}>
-        <span className={styles.badgeDot} />
-        <p className={styles.badgeText}>{personalInfo.role}</p>
-      </div> */}
-
-      <div className={styles.scrollIndicator}>
-        <span className={styles.scrollLine} />
-        <span className={styles.scrollLabel}>Scroll</span>
-      </div>
+      <span className={styles.scrollIndicator}>SCROLL</span>
     </section>
   );
 }

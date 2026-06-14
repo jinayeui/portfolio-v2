@@ -12,7 +12,7 @@
 }
 
 .sectionLabel .labelText {
-  font-family: var(--font-mono);
+  font-family: var(--font-code);
   font-size: 0.7rem;
   color: var(--primary);
   letter-spacing: 0.15em;
@@ -27,7 +27,7 @@
 }
 
 .title {
-  font-family: var(--font-display);
+  font-family: var(--font-eng);
   font-size: clamp(2rem, 8vw, 4rem);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -53,14 +53,14 @@
 }
 
 .careerList .careerHeader .period {
-  font-family: var(--font-mono);
+  font-family: var(--font-code);
   font-size: 0.8rem;
   color: var(--gray-dark);
   letter-spacing: 0.08em;
 }
 
 .careerList .careerHeader .company {
-  font-family: var(--font-display);
+  font-family: var(--font-eng);
   font-size: 1.5rem;
   font-weight: 700;
   margin: 1rem 0;
@@ -96,7 +96,7 @@
 }
 
 .careerList .careerBody .techStack li {
-  font-family: var(--font-mono);
+  font-family: var(--font-code);
   font-size: 0.7rem;
   letter-spacing: 0.05em;
   padding: 0.5rem 0.8rem;
