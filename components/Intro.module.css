@@ -30,7 +30,7 @@
   overflow: hidden;
   white-space: nowrap;
   display: flex;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 .marquee p {
@@ -126,6 +126,6 @@
   }
 
   100% {
-    transform: translateX(calc(-100% - 1rem));
+    transform: translateX(calc(-100% - 2.5rem));
   }
 }
