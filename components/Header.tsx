@@ -36,9 +36,11 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.isScrolled : ''}`}>
-      <a href='/' className={styles.logo}>
-        {'<portfolio />'}
-      </a>
+      <div className={styles.logo}>
+        <a href="/">
+          {'<portfolio />'}
+        </a>
+      </div>
       <nav className={styles.nav}>
         <ul>
           {sectionLinks.map(({ label, id }) => (
@@ -55,8 +57,8 @@ export default function Header() {
           <li>
             <a
               href={personalInfo.github}
-              target='_blank'
-              rel='noopener noreferrer'
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.navLink}
             >
               GitHub
@@ -64,15 +66,16 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <a
-        href={personalInfo.github}
-        target='_blank'
-        rel='noopener noreferrer'
-        className={styles.btnGithub}
-        aria-label='GitHub'
-      >
-        <GithubIcon />
-      </a>
+      <div className={styles.btnGithub}>
+        <a
+          href={personalInfo.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <GithubIcon />
+        </a>
+      </div>
     </header>
   );
 }

@@ -58,7 +58,7 @@ export default function Projects() {
                   </div>
 
                   <div className={styles.desc}>
-                    <p className={styles.subtit}>
+                    <p className={styles.subTit}>
                       {project.subtitle}
                     </p>
                     <h3 className={styles.tit}>

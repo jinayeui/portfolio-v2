@@ -23,6 +23,7 @@
 
 .marquee {
   --marquee-gap: 3rem;
+
   position: absolute;
   top: 50%;
   left: 0;
@@ -31,11 +32,13 @@
   overflow: hidden;
   white-space: nowrap;
   display: flex;
+  align-items: center;
   gap: var(--marquee-gap);
 }
 
 .marquee p {
-  font-family: var(--font-default);
+  transform: translate3d(0, 0, 0); 
+  will-change: transform;
   font-size: 15vw;
   font-weight: 900;
   color: var(--primary);
@@ -55,7 +58,6 @@
 }
 
 .title {
-  font-family: var(--font-default);
   font-size: clamp(3rem, 14vw, 10rem);
   font-weight: 900;
   margin-bottom: 1.5rem;
