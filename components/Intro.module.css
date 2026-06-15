@@ -1,14 +1,17 @@
 .section {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: 0 1.5rem;
-  width: min(100%, 1200px);
-  margin: 0 auto;
+  align-items: center;
 }
 
-.deco {
+.inner {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* .deco {
   position: absolute;
   top: 20%;
   right: -100px;
@@ -16,6 +19,29 @@
   height: 200px;
   background: linear-gradient(to bottom, transparent, var(--primary), transparent);
   opacity: 0.4;
+} */
+
+.marquee {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  gap: 2rem;
+}
+
+.marquee p {
+  font-family: var(--font-default);
+  font-size: 15vw;
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+  opacity: 0.05;
+  animation: marquee 20s linear infinite;
 }
 
 .subtitle {
@@ -25,8 +51,6 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 2.25rem;
-  opacity: 0;
-  animation: fadeUp 0.7s ease forwards;
 }
 
 .title {
@@ -34,8 +58,12 @@
   font-size: clamp(3rem, 14vw, 10rem);
   font-weight: 900;
   margin-bottom: 1.5rem;
+  clip-path: inset(100% 0 0 0);
   opacity: 0;
-  animation: fadeUp 0.7s ease 0.1s forwards;
+}
+
+.title:global(.is-active) {
+  animation: clipShowUp 0.5s ease-in-out forwards;
 }
 
 .title em {
@@ -58,11 +86,46 @@
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes clipShowUp {
+  0% {
+    clip-path: inset(100% 0 0 0);
+    opacity: 0;
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 2rem));
+  }
 }

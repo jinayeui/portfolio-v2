@@ -2,13 +2,13 @@
 
 import { useEffect } from 'react';
 
-export function useReveal() {
+export function useActiveOnView() {
   useEffect(() => {
-    const elements = document.querySelectorAll('.reveal');
+    const elements = document.querySelectorAll('.target-view');
 
     const groups = new Map<number, Element[]>();
     elements.forEach((el) => {
-      const threshold = parseFloat((el as HTMLElement).dataset.threshold ?? '0.3');
+      const threshold = parseFloat((el as HTMLElement).dataset.threshold ?? '0.3'); // default threshold: 0.3
       if (!groups.has(threshold)) groups.set(threshold, []);
       groups.get(threshold)!.push(el);
     });
@@ -19,7 +19,7 @@ export function useReveal() {
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add('active');
+              entry.target.classList.add('is-active');
             }
           });
         },

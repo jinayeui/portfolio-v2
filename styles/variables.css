@@ -1,0 +1,13 @@
+:root {
+  --bg: #0a0e1a;
+  --surface: #111827;
+  --primary: #4f8ef7;
+  --primary-dim: rgba(79, 142, 247, 0.1);
+  --secondary: #1a2540;
+  --white: #f0f4ff;
+  --gray: #8a96b0;
+  --gray-dark: #3a4560;
+  --font-eng: 'Syne', sans-serif;
+  --font-code: 'DM Mono', monospace;
+  --font-default: 'Pretendard', sans-serif;
+}

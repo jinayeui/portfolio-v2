@@ -7,18 +7,24 @@ export default function Intro() {
   return (
     <section id='intro' className={styles.section}>
       {/* <span className={styles.deco} /> */}
+      <div className={styles.marquee}>
+        <p>HELLO I'M A {personalInfo.role} JINA JEONG</p>
+        <p>HELLO I'M A {personalInfo.role} JINA JEONG</p>
+      </div>
 
-      <p className={styles.subtitle}>
-        ✦ {personalInfo.role}
-      </p>
+      <div className={styles.inner}>
+        <p className={styles.subtitle}>
+          ✦ {personalInfo.role}
+        </p>
 
-      <h1 className={styles.title}>
-        JINA's
-        <br />
-        <em>PORTFOLIO</em>
-      </h1>
+        <h1 className={`${styles.title} target-mount`}>
+          JINA's
+          <br />
+          <em>PORTFOLIO</em>
+        </h1>
+      </div>
 
-      <span className={styles.scrollIndicator}>SCROLL</span>
+      <div className={styles.scrollIndicator}>SCROLL</div>
     </section>
   );
 }

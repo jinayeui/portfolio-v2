@@ -13,7 +13,7 @@
 }
 
 .header.isScrolled {
-  background-color: rgba(13, 13, 13, 0.8);
+  background-color: var(--primary-dim);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--secondary);
 }

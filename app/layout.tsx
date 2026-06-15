@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
-import AOS from '@/lib/AOS';
+import AOSInit from '@/lib/AOSInit';
+import '@/styles/variables.css';
 import '@/styles/globals.css';
 import '@/styles/fonts.css';
 
@@ -17,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='ko'>
       <body>
-        <AOS />
+        <AOSInit />
         {children}
       </body>
     </html>
