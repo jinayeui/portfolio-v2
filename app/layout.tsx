@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import AOSInit from '@/lib/AOSInit';
+import ActiveHooks from '@/lib/ActiveHooks';
 import '@/styles/fonts.css';
 import '@/styles/variables.css';
 import '@/styles/globals.css';
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='ko'>
       <body>
         <AOSInit />
+        <ActiveHooks />
         {children}
       </body>
     </html>

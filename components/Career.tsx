@@ -1,5 +1,3 @@
-'use client';
-
 import { careers } from '@/data/portfolio';
 import styles from './Career.module.css';
 

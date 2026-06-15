@@ -1,5 +1,3 @@
-'use client';
-
 import { personalInfo } from '@/data/portfolio';
 import styles from './Contact.module.css';
 

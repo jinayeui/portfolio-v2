@@ -1,5 +1,3 @@
-'use client';
-
 import { personalInfo } from '@/data/portfolio';
 import styles from './Intro.module.css';
 
