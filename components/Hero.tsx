@@ -1,9 +1,9 @@
 import { personalInfo } from '@/data/portfolio';
-import styles from './Intro.module.css';
+import styles from './Hero.module.css';
 
-export default function Intro() {
+export default function Hero() {
   return (
-    <section id='intro' className={styles.section}>
+    <section id='hero' className={styles.section}>
       {/* <span className={styles.deco} /> */}
       <div className={styles.marquee}>
         <p>HELLO I'M A {personalInfo.role} JINA JEONG</p>
