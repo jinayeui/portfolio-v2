@@ -46,7 +46,7 @@ export default async function ProjectDetail({ params }: Props) {
           </div>
 
           <div className={styles.tags}>
-            {project.tags.map((tag) => (
+            {project.tags?.map((tag) => (
               <span key={tag} className={styles.tag}>
                 {tag}
               </span>
