@@ -5,9 +5,9 @@ import { personalInfo } from '@/data/portfolio';
 import styles from './Header.module.css';
 
 const sectionLinks = [
+  { label: 'About', id: 'about' },
   { label: 'Career', id: 'career' },
   { label: 'Projects', id: 'projects' },
-  { label: 'Contact', id: 'contact' },
 ];
 
 const GithubIcon = () => {

@@ -1,9 +1,9 @@
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import Career from '@/components/Career';
-import Projects from '@/components/Projects';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import Header from '@/components/layout/Header';
+import Hero from '@/components/section/Hero';
+import About from '@/components/section/About';
+import Career from '@/components/section/Career';
+import Projects from '@/components/section/Projects';
+import Footer from '@/components/layout/Footer';
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <About />
         <Career />
         <Projects />
-        <Contact />
       </main>
       <Footer />
     </div>

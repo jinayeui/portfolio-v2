@@ -1,0 +1,53 @@
+.section {
+  padding: 8rem 0;
+}
+
+.inner {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.sectionLabel .labelText {
+  font-family: var(--font-code);
+  font-size: 0.7rem;
+  color: var(--primary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.sectionLabel .labelLine {
+  flex: 1;
+  height: 1px;
+  background: var(--secondary);
+}
+
+.title {
+  font-family: var(--font-eng);
+  font-size: clamp(2rem, 10vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .inner {
+    padding: 0 1.25rem;
+  }
+
+  .title {
+    margin-bottom: 3rem;
+  }
+}

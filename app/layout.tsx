@@ -3,7 +3,8 @@ import AOSInit from '@/lib/AOSInit';
 import ActiveHooks from '@/lib/ActiveHooks';
 import '@/styles/fonts.css';
 import '@/styles/variables.css';
-import '@/styles/globals.css';
+import '@/styles/common.css';
+import '@/styles/layout.css';
 
 export const viewport: Viewport = {
   width: 'device-width',
