@@ -3,30 +3,31 @@ import { projects } from '@/data/portfolio';
 import Section from '@/components/layout/Section';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Title from '@/components/ui/Title';
+import Button from '@/components/ui/Button';
 import styles from './Projects.module.css';
 
 export default function Projects() {
   return (
     <Section id="projects">
-      <SectionLabel text="✦ Projects" />
+      <SectionLabel text={'✦ Projects'} />
       <div className={styles.headerRow}>
         <Title>
           Work<br />
           Archive
         </Title>
-        <div className={styles.btnMore}>
-          <a
-            href="https://foggy-napkin-4b2.notion.site/3716da1da01180f7b323c3198d588343?source=copy_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="경력기술서 열기"
-          >
-            VIEW MORE →
-          </a>
-        </div>
+        <Button
+          text={'VIEW MORE →'}
+          href={'https://foggy-napkin-4b2.notion.site/3716da1da01180f7b323c3198d588343?source=copy_link'}
+          ariaLabel={'경력기술서 열기'}
+          className={'btnMore'}
+        />
       </div>
 
-      <ul className={styles.projectList} data-aos="fade-up" data-aos-delay="200">
+      <ul
+        className={styles.projectList}
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         {projects.map((project) => {
           const isExternal = !!project.url;
           return (

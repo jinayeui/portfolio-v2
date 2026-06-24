@@ -3,7 +3,7 @@ import styles from './Hero.module.css';
 
 export default function Hero() {
   return (
-    <section id='hero' className={styles.section}>
+    <section id="hero" className={styles.section}>
       {/* <span className={styles.deco} /> */}
       <div className={styles.marquee}>
         <p>HELLO I'M A {personalInfo.role} JINA JEONG</p>
@@ -16,8 +16,7 @@ export default function Hero() {
         </p>
 
         <h1 className={`${styles.title} target-mount`}>
-          JINA's
-          <br />
+          JINA's<br />
           <em>PORTFOLIO</em>
         </h1>
       </div>

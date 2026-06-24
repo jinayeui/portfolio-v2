@@ -7,7 +7,7 @@ import styles from './Career.module.css';
 export default function Career() {
   return (
     <Section id="career">
-      <SectionLabel text="✦ Career" />
+      <SectionLabel text={'✦ Career'} />
       <Title>
         Work<br />
         Experience
@@ -26,7 +26,7 @@ export default function Career() {
               <ul className={styles.desc} data-aos="fade-left">
                 {career.description.map((item, i) => (
                   <li key={i}>
-                    <span className={styles.bullet}>›</span>
+                    <span className={styles.bullet}>‣</span>
                     {item}
                   </li>
                 ))}

@@ -4,42 +4,24 @@
 }
 
 .text {
-  color: var(--gray);
   font-size: 1.2rem;
   font-weight: 300;
-  line-height: 1.9;
+  line-height: 2;
   letter-spacing: -0.02em;
   text-align: center;
+}
+
+.text strong {
+  font-weight: 700;
+  color: var(--primary);
 }
 
 .btnWrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
-  margin: 3rem auto 0;
-}
-
-.btnWrap > div a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 1rem 1.6rem;
-  border-radius: 50px;
-  border: 1px solid var(--secondary);
-  background-color: var(--surface);
-  color: var(--gray);
-  font-family: var(--font-code);
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-  transition: border-color 0.25s, color 0.25s, background-color 0.25s;
-}
-
-.btnWrap > div a:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-  background-color: var(--primary-dim);
+  margin: 4rem auto 0;
 }
 
 .skills {
@@ -67,22 +49,18 @@
 
 @media (max-width: 768px) {
   .text {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: 2.5rem;
   }
 
   .btnWrap {
-    gap: 0.6rem;
+    gap: 1rem;
   }
 
-  .btnWrap > div {
+  .btnWrap :global(.btnPhone),
+  .btnWrap :global(.btnEmail),
+  .btnWrap :global(.btnGithub) {
     width: 100%;
-  }
-
-  .btnWrap > div a {
-    width: 100%;
-    justify-content: center;
   }
 
   .skills {

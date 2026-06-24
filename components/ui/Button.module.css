@@ -1,0 +1,30 @@
+.btn {
+  border-radius: 50px;
+  border: 1px solid var(--secondary);
+  background-color: var(--surface);
+  color: var(--gray);
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  transition: border-color 0.25s, color 0.25s, background-color 0.25s;
+}
+
+.btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background-color: var(--primary-dim);
+}
+
+.btn > a {
+    display: block;
+    width: 100%;
+    padding: 1.3rem 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .btn > a {
+    padding: 1.1rem 1.7rem;
+  }
+}
