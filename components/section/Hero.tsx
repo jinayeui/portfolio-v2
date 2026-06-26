@@ -6,8 +6,10 @@ export default function Hero() {
     <section id="hero" className={styles.section}>
       {/* <span className={styles.deco} /> */}
       <div className={styles.marquee}>
-        <p>HELLO I'M A {personalInfo.role} JINA JEONG</p>
-        <p>HELLO I'M A {personalInfo.role} JINA JEONG</p>
+        <ul>
+          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js</li>
+          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js</li>
+        </ul>
       </div>
 
       <div className={styles.inner}>
