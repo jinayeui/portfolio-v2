@@ -32,14 +32,14 @@ export default function Career() {
                 ))}
               </ul>
 
-              {career.techStack && career.techStack.length > 0 && (
+              {career.tags && career.tags.length > 0 && (
                 <ul
                   className={styles.techStack}
                   data-aos="fade-left"
                   data-aos-anchor-placement="bottom-bottom"
                   data-aos-delay="200"
                 >
-                  {career.techStack.map((tech, i) => (
+                  {career.tags.map((tech, i) => (
                     <li key={i}>{tech}</li>
                   ))}
                 </ul>

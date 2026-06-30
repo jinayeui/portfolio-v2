@@ -4,7 +4,6 @@ import styles from './Hero.module.css';
 export default function Hero() {
   return (
     <section id="hero" className={styles.section}>
-      {/* <span className={styles.deco} /> */}
       <div className={styles.marquee}>
         <ul>
           <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js</li>

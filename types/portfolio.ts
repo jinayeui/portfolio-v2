@@ -11,7 +11,7 @@ export interface Career {
   role: string;
   period: string;
   description: string[];
-  techStack: string[];
+  tags: string[];
 }
 
 export interface Project {
@@ -20,8 +20,8 @@ export interface Project {
   subtitle: string;
   contribution?: string;
   description?: string;
-  tags?: string[];
-  url?: string;
+  techStack?: string[];
+  url: string;
   thumbnail: string;
   period?: string;
 }
