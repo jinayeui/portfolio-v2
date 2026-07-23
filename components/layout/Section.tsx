@@ -1,12 +1,12 @@
 import type { ReactNode } from 'react';
 
-interface Props {
+interface SectionProps {
   id: string;
   className?: string;
   children: ReactNode;
 }
 
-export default function Section({ id, className, children }: Props) {
+export default function Section({ id, className, children }: SectionProps) {
   return (
     <section id={id} className={`section ${className || ''}`}>
       <div className="inner">

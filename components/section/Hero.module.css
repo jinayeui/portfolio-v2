@@ -1,5 +1,6 @@
 .section {
   height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,42 +22,39 @@
   opacity: 0.4;
 } */
 
-.marquee {
-  --marquee-gap: 3.2rem;
-
+.orb {
   position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
 }
 
-.marquee * {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
+.orb1 {
+  width: 500px;
+  height: 500px;
+  top: 25%;
+  right: 10%;
+  background: radial-gradient(circle, rgba(79, 142, 247, 0.18), transparent 70%);
+  animation: float1 8s ease-in-out infinite;
 }
 
-.marquee > ul {
-  display: flex;
-  align-items: center;
-  gap: var(--marquee-gap);
+.orb2 {
+  width: 380px;
+  height: 380px;
+  top: 45%;
+  left: 5%;
+  background: radial-gradient(circle, rgba(79, 142, 247, 0.12), transparent 70%);
+  animation: float2 12s ease-in-out infinite;
 }
 
-.marquee > ul > li {
-  flex-shrink: 0;
-  transform: translate3d(0, 0, 0); 
-  will-change: transform;
-  font-size: 15vw;
-  font-weight: 900;
-  color: var(--primary);
-  letter-spacing: -0.1rem;
-  text-transform: uppercase;
-  opacity: 0.05;
-  animation: marquee 18s linear infinite;
+.orb3 {
+  width: 280px;
+  height: 280px;
+  top: 10%;
+  left: 20%;
+  background: radial-gradient(circle, rgba(79, 142, 247, 0.08), transparent 70%);
+  animation: float3 16s ease-in-out infinite;
 }
 
 .subtitle {
@@ -123,19 +121,20 @@
   }
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-100% - var(--marquee-gap)));
-  }
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -60px) scale(1.05); }
+  66% { transform: translate(-30px, 30px) scale(0.95); }
 }
 
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  40% { transform: translate(-50px, 40px) scale(1.08); }
+  70% { transform: translate(30px, -50px) scale(0.92); }
+}
 
-@media (max-width: 768px) {
-  .marquee {
-    --marquee-gap: 1.2rem;
-  }
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  30% { transform: translate(60px, 30px) scale(0.96); }
+  60% { transform: translate(-20px, -40px) scale(1.04); }
 }

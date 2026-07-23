@@ -4,13 +4,10 @@ import styles from './Hero.module.css';
 export default function Hero() {
   return (
     <section id="hero" className={styles.section}>
-      <div className={styles.marquee}>
-        <ul>
-          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js</li>
-          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js</li>
-        </ul>
-      </div>
-
+      <div className={`${styles.orb} ${styles.orb1}`} aria-hidden="true" />
+      <div className={`${styles.orb} ${styles.orb2}`} aria-hidden="true" />
+      <div className={`${styles.orb} ${styles.orb3}`} aria-hidden="true" />
+      
       <div className={styles.inner}>
         <p className={styles.subtitle}>
           ✦ {personalInfo.role}

@@ -6,7 +6,8 @@ import styles from './About.module.css';
 
 export default function About() {
   return (
-    <Section id="about">
+    <>
+      <Section id="about">
       <Title className={styles.center}>About Me</Title>
 
       <p className={styles.text} data-aos="fade-in" data-aos-delay="200">
@@ -40,17 +41,14 @@ export default function About() {
           className={'btnGithub'}
         />
       </div>
+      </Section>
 
-      {/* <ul className={styles.skills}>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>SCSS</li>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-        <li>React</li>
-        <li>Next.js</li>
-        <li>TypeScript</li>
-      </ul> */}
-    </Section>
+      <div className={styles.marquee}>
+        <ul>
+          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js</li>
+          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js</li>
+        </ul>
+      </div>
+    </>
   );
 }
