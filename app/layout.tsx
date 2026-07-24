@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { Syne, DM_Mono } from 'next/font/google';
 import AOSInit from '@/lib/AOSInit';
 import ActiveHooks from '@/lib/ActiveHooks';
 import '@/styles/fonts.css';
@@ -16,9 +17,12 @@ export const metadata: Metadata = {
   description: '웹 퍼블리셔 정지나입니다.',
 };
 
+const syne = Syne({ subsets: ['latin'], weight: ['700'], variable: '--font-eng' });
+const dmMono = DM_Mono({ subsets: ['latin'], weight: ['400'], variable: '--font-code' });
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='ko'>
+    <html lang='ko' className={`${syne.variable} ${dmMono.variable}`}>
       <body>
         <AOSInit />
         <ActiveHooks />

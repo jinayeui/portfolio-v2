@@ -28,6 +28,7 @@
   filter: blur(80px);
   pointer-events: none;
   z-index: 0;
+  will-change: transform;
 }
 
 .orb1 {
@@ -137,4 +138,11 @@
   0%, 100% { transform: translate(0, 0) scale(1); }
   30% { transform: translate(60px, 30px) scale(0.96); }
   60% { transform: translate(-20px, -40px) scale(1.04); }
+}
+
+
+@media all and (max-width: 768px) {
+  .orb {
+    filter: blur(40px);
+  }
 }

@@ -39,7 +39,7 @@
   margin-bottom: 5rem;
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
   .section {
     padding: 5rem 0;
   }

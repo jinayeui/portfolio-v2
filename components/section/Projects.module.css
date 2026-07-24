@@ -61,7 +61,7 @@
   color: var(--primary);
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
   .headerRow {
     gap: 1.25rem;
     margin-bottom: 3rem;
