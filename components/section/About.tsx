@@ -12,14 +12,9 @@ export default function About() {
 
         <p className={styles.text} data-aos='fade-in' data-aos-delay='200'>
           안녕하세요, 4년 차 퍼블리셔 정지나입니다. ☻<br />
-          초기 구축부터 유지보수, 운영까지의 <strong>전 과정에서 경험</strong>을
-          쌓았습니다.
-          <br />
-          <strong>강한 책임감</strong>으로 맡은 프로젝트를 집요하게 파고 들어
-          최선의 결과물을 도출합니다.
-          <br />
-          현재는 <strong>프론트엔드 기술을 학습</strong>하며, 더 넓은 기술적
-          성장을 이어나가고 있습니다.
+          초기 구축부터 유지보수, 운영까지의 <strong>전 과정에서 경험</strong>을 쌓았습니다.<br />
+          <strong>강한 책임감</strong>으로 맡은 프로젝트를 집요하게 파고 들어 최선의 결과물을 도출합니다.<br />
+          현재는 <strong>프론트엔드 기술을 학습</strong>하며, 더 넓은 기술적 성장을 이어나가고 있습니다.
         </p>
 
         <div className={styles.btnWrap}>
