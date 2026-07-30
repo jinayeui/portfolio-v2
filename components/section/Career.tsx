@@ -6,24 +6,25 @@ import styles from './Career.module.css';
 
 export default function Career() {
   return (
-    <Section id="career">
+    <Section id='career'>
       <SectionLabel text={'✦ Career'} />
       <Title>
-        Work<br />
+        Work
+        <br />
         Experience
       </Title>
 
       <div className={styles.careerList}>
         {careers.map((career, idx) => (
           <article key={idx} className={styles.careerItem}>
-            <div className={styles.careerHeader} data-aos="fade-up">
+            <div className={styles.careerHeader} data-aos='fade-up'>
               <p className={styles.period}>{career.period}</p>
               <h3 className={styles.company}>{career.company}</h3>
               <p className={styles.role}>{career.role}</p>
             </div>
 
             <div className={styles.careerBody}>
-              <ul className={styles.desc} data-aos="fade-left">
+              <ul className={styles.desc} data-aos='fade-left'>
                 {career.description.map((item, i) => (
                   <li key={i}>
                     <span className={styles.bullet}>‣</span>
@@ -35,9 +36,9 @@ export default function Career() {
               {career.tags && career.tags.length > 0 && (
                 <ul
                   className={styles.techStack}
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="bottom-bottom"
-                  data-aos-delay="200"
+                  data-aos='fade-left'
+                  data-aos-anchor-placement='bottom-bottom'
+                  data-aos-delay='200'
                 >
                   {career.tags.map((tech, i) => (
                     <li key={i}>{tech}</li>

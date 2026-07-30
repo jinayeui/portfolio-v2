@@ -53,13 +53,6 @@
   white-space: nowrap;
 }
 
-.marquee * {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-}
-
 .marquee > ul {
   display: flex;
   align-items: center;
@@ -68,7 +61,8 @@
 
 .marquee > ul > li {
   flex-shrink: 0;
-  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   will-change: transform;
   font-size: 15vw;
   font-weight: 900;

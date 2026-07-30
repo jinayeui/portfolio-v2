@@ -8,16 +8,19 @@ import styles from './Projects.module.css';
 
 export default function Projects() {
   return (
-    <Section id="projects">
+    <Section id='projects'>
       <SectionLabel text={'✦ Projects'} />
       <div className={styles.headerRow}>
         <Title>
-          Work<br />
+          Work
+          <br />
           Archive
         </Title>
         <Button
           text={'VIEW MORE →'}
-          href={'https://foggy-napkin-4b2.notion.site/3716da1da01180f7b323c3198d588343?source=copy_link'}
+          href={
+            'https://foggy-napkin-4b2.notion.site/3716da1da01180f7b323c3198d588343?source=copy_link'
+          }
           ariaLabel={'경력기술서 열기'}
           className={'btnMore'}
         />
@@ -25,8 +28,8 @@ export default function Projects() {
 
       <ul
         className={styles.projectList}
-        data-aos="fade-up"
-        data-aos-delay="200"
+        data-aos='fade-up'
+        data-aos-delay='200'
       >
         {projects.map((project) => {
           const isExternal = !!project.url;
@@ -43,7 +46,7 @@ export default function Projects() {
                     alt={project.title}
                     fill
                     className={styles.thumbImg}
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes='(max-width: 768px) 100vw, 33vw'
                   />
                 </div>
                 <div className={styles.desc}>

@@ -23,6 +23,9 @@ const dmMono = DM_Mono({ subsets: ['latin'], weight: ['400'], variable: '--font-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='ko' className={`${syne.variable} ${dmMono.variable}`}>
+      <head>
+        <link rel='preload' href='/fonts/Pretendard/Pretendard-Black.woff2' as='font' type='font/woff2' crossOrigin='anonymous' />
+      </head>
       <body>
         <AOSInit />
         <ActiveHooks />

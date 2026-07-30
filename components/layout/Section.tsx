@@ -9,9 +9,7 @@ interface SectionProps {
 export default function Section({ id, className, children }: SectionProps) {
   return (
     <section id={id} className={`section ${className || ''}`}>
-      <div className="inner">
-        {children}
-      </div>
+      <div className='inner'>{children}</div>
     </section>
   );
 }
