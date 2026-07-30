@@ -45,8 +45,8 @@ export default function About() {
 
       <div className={styles.marquee}>
         <ul>
-          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js</li>
-          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js</li>
+          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js TypeScript</li>
+          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js TypeScript</li>
         </ul>
       </div>
     </>
