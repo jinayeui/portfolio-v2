@@ -14,21 +14,21 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 4rem;
-}
 
-.sectionLabel .labelText {
-  font-family: var(--font-code);
-  font-size: 0.7rem;
-  color: var(--primary);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
+  & .labelText {
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    color: var(--primary);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
 
-.sectionLabel .labelLine {
-  flex: 1;
-  height: 1px;
-  background: var(--secondary);
+  & .labelLine {
+    flex: 1;
+    height: 1px;
+    background: var(--secondary);
+  }
 }
 
 .title {

@@ -9,11 +9,11 @@
   line-height: 2;
   letter-spacing: -0.02em;
   text-align: center;
-}
 
-.text strong {
-  font-weight: 700;
-  color: var(--primary);
+  & strong {
+    font-weight: 700;
+    color: var(--primary);
+  }
 }
 
 .btnWrap {
@@ -24,55 +24,31 @@
   margin: 4rem auto 0;
 }
 
-/* .skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  width: 60%;
-  margin: 6rem auto 0;
-}
-
-.skills li {
-  font-family: var(--font-default);
-  font-size: clamp(1.6rem, 4vw, 2.8rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--white);
-  opacity: 0.15;
-  transition: opacity 0.4s ease;
-}
-
-.skills li.active {
-  opacity: 1;
-} */
-
 .marquee {
   --marquee-gap: 3.2rem;
   overflow: hidden;
   white-space: nowrap;
-}
 
-.marquee > ul {
-  display: flex;
-  align-items: center;
-  gap: var(--marquee-gap);
-}
+  & > ul {
+    display: flex;
+    align-items: center;
+    gap: var(--marquee-gap);
 
-.marquee > ul > li {
-  flex-shrink: 0;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  will-change: transform;
-  font-size: 15vw;
-  font-weight: 900;
-  color: var(--primary);
-  letter-spacing: -0.1rem;
-  text-transform: uppercase;
-  opacity: 0.05;
-  animation: marquee 18s linear infinite;
+    & > li {
+      flex-shrink: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      will-change: transform;
+      font-size: 15vw;
+      font-weight: 900;
+      color: var(--primary);
+      letter-spacing: -0.1rem;
+      text-transform: uppercase;
+      opacity: 0.05;
+      animation: marquee 18s linear infinite;
+    }
+  }
 }
-
 
 @keyframes marquee {
   0% {
@@ -84,7 +60,6 @@
   }
 }
 
-
 @media all and (max-width: 768px) {
   .text {
     font-size: 1rem;
@@ -93,20 +68,15 @@
 
   .btnWrap {
     gap: 1rem;
-  }
 
-  .btnWrap :global(.btnPhone),
-  .btnWrap :global(.btnEmail),
-  .btnWrap :global(.btnGithub) {
-    width: 100%;
+    & :global(.btnPhone),
+    & :global(.btnEmail),
+    & :global(.btnGithub) {
+      width: 100%;
+    }
   }
 
   .marquee {
     --marquee-gap: 1.2rem;
   }
-
-  /* .skills {
-    width: 100%;
-    gap: 0.7rem;
-  } */
 }

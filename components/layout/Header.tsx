@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { personalInfo } from '@/data/portfolio';
 import styles from './Header.module.css';
 
@@ -37,7 +38,7 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.isScrolled : ''}`}>
       <div className={styles.logo}>
-        <a href='/'>{'<portfolio />'}</a>
+        <Link href='/'>{'<portfolio />'}</Link>
       </div>
       <nav className={styles.nav}>
         <ul>

@@ -12,7 +12,7 @@ export default function Hero() {
         <p className={styles.subtitle}>✦ {personalInfo.role}</p>
 
         <h1 className={`${styles.title} target-mount`}>
-          JINA's
+          JINA&#39;s
           <br />
           <em>PORTFOLIO</em>
         </h1>

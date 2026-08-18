@@ -8,19 +8,19 @@
   letter-spacing: 0.06em;
   white-space: nowrap;
   transition: border-color 0.25s, color 0.25s, background-color 0.25s;
-}
 
-.btn:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-  background-color: var(--primary-dim);
-}
+  &:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: var(--primary-dim);
+  }
 
-.btn > a {
+  & > a {
     display: block;
     width: 100%;
     padding: 1.3rem 2rem;
     text-align: center;
+  }
 }
 
 @media all and (max-width: 768px) {
