@@ -56,7 +56,7 @@
     }
   }
 
-  & li a:hover .desc .tit {
+  & li:hover .desc .tit {
     color: var(--primary);
   }
 }
