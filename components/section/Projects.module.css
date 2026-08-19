@@ -11,6 +11,37 @@
   }
 }
 
+.projectFilter {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+
+  .filterTab {
+    border-radius: 50px;
+    border: 1px solid var(--color-secondary);
+    background-color: transparent;
+    color: var(--color-gray);
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    padding: 0.7rem 1.2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+
+    &:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+
+    &.isActive {
+      border-color: var(--color-primary);
+      background-color: var(--color-primary-dim);
+      color: var(--color-primary);
+    }
+  }
+}
+
 .projectList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -41,8 +72,9 @@
 
     & .subTit {
       font-family: var(--font-code);
+      font-weight: 400;
       font-size: 0.7rem;
-      color: var(--gray);
+      color: var(--color-gray);
       letter-spacing: 0.08em;
       margin-bottom: 0.6rem;
     }
@@ -50,14 +82,14 @@
     & .tit {
       font-size: 1.5rem;
       font-weight: 700;
-      color: var(--white);
+      color: var(--color-white);
       letter-spacing: -0.01em;
       transition: color 0.2s;
     }
   }
 
   & li:hover .desc .tit {
-    color: var(--primary);
+    color: var(--color-primary);
   }
 }
 
@@ -69,5 +101,17 @@
 
   .projectList {
     grid-template-columns: 1fr;
+  }
+
+  .projectFilter {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }

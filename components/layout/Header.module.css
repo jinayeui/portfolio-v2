@@ -12,17 +12,19 @@
   transition: background-color 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
 
   &.isScrolled {
-    background-color: var(--primary-dim);
+    background-color: var(--color-primary-dim);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--color-secondary);
   }
 
   & .logo a {
-    font-family: var(--font-code);
-    font-size: 0.85rem;
-    color: var(--primary);
-    text-decoration: none;
+    font-family: var(--font-eng);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-primary);
     letter-spacing: 0.05em;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--color-primary);
   }
 
   & nav {
@@ -34,15 +36,15 @@
 
     & .navLink {
       font-family: var(--font-code);
+      font-weight: 400;
       font-size: 0.78rem;
-      color: var(--gray);
-      text-decoration: none;
+      color: var(--color-gray);
       letter-spacing: 0.08em;
       text-transform: uppercase;
       transition: color 0.2s ease;
 
       &:hover {
-        color: var(--primary);
+        color: var(--color-primary);
       }
     }
   }
@@ -65,14 +67,14 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      border: 1px solid var(--secondary);
-      color: var(--gray);
+      border: 1px solid var(--color-secondary);
+      color: var(--color-gray);
       transition: border-color 0.2s, color 0.2s, background-color 0.2s;
 
       &:hover {
-        border-color: var(--primary);
-        color: var(--primary);
-        background-color: var(--primary-dim);
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+        background-color: var(--color-primary-dim);
       }
 
       & a {

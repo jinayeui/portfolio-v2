@@ -14,14 +14,17 @@ export interface Career {
   tags: string[];
 }
 
+export type ProjectCategory = 'company' | 'personal';
+
 export interface Project {
   id: string;
   title: string;
   subtitle: string;
+  period?: string;
   contribution?: string;
   description?: string;
   techStack?: string[];
   url: string;
   thumbnail: string;
-  period?: string;
+  category: ProjectCategory;
 }

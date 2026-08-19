@@ -8,7 +8,7 @@
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
     padding-bottom: 3.5rem;
-    border-bottom: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--color-secondary);
 
     &:last-child {
       border-bottom: none;
@@ -18,8 +18,9 @@
   & .careerHeader {
     & .period {
       font-family: var(--font-code);
+      font-weight: 400;
       font-size: 0.8rem;
-      color: var(--gray-dark);
+      color: var(--color-gray-dark);
       letter-spacing: 0.08em;
     }
 
@@ -31,7 +32,7 @@
 
     & .role {
       font-size: 1rem;
-      color: var(--primary);
+      color: var(--color-primary);
     }
   }
 
@@ -42,14 +43,14 @@
         gap: 0.75rem;
         margin-bottom: 1.4rem;
         font-size: 1.1rem;
-        color: var(--gray);
+        color: var(--color-gray);
 
         &:last-child {
           margin-bottom: 0;
         }
 
         & .bullet {
-          color: var(--primary);
+          color: var(--color-primary);
           flex-shrink: 0;
         }
       }
@@ -63,11 +64,12 @@
 
       & li {
         font-family: var(--font-code);
+        font-weight: 400;
         font-size: 0.75rem;
         letter-spacing: 0.05em;
         padding: 0.5rem 0.8rem;
-        border: 1px solid var(--primary);
-        color: var(--primary);
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
         border-radius: 50px;
         white-space: nowrap;
       }

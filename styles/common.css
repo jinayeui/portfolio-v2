@@ -1,12 +1,12 @@
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--secondary); border-radius: 2px; }
-::selection { background: var(--primary); color: #0d0d0d; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-secondary); border-radius: 2px; }
+::selection { background: var(--color-primary); color: #0d0d0d; }
 
 * { position: relative; box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body {line-height: 1; -webkit-font-smoothing: antialiased; word-break: keep-all; background-color: var(--bg); font-family: var(--font-default);}
-#wrap {color: var(--white); overflow: hidden;}
+body {line-height: 1; -webkit-font-smoothing: antialiased; word-break: keep-all; background-color: var(--color-bg); font-family: var(--font-default);}
+#wrap {color: var(--color-white); overflow: hidden;}
 a { color: inherit; text-decoration: none; }
 img { display: block; }
 span { display: inline-block; }

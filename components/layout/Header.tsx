@@ -38,7 +38,7 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.isScrolled : ''}`}>
       <div className={styles.logo}>
-        <Link href='/'>{'<portfolio />'}</Link>
+        <Link href='/'>JINAyeui.</Link>
       </div>
       <nav className={styles.nav}>
         <ul>

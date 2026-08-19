@@ -17,8 +17,9 @@
 
   & .labelText {
     font-family: var(--font-code);
+    font-weight: 400;
     font-size: 0.7rem;
-    color: var(--primary);
+    color: var(--color-primary);
     letter-spacing: 0.15em;
     text-transform: uppercase;
     white-space: nowrap;
@@ -27,7 +28,7 @@
   & .labelLine {
     flex: 1;
     height: 1px;
-    background: var(--secondary);
+    background: var(--color-secondary);
   }
 }
 

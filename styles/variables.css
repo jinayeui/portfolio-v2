@@ -1,12 +1,12 @@
 :root {
-  --bg: #0a0e1a;
-  --surface: #111827;
-  --primary: #4f8ef7;
-  --primary-dim: rgba(79, 142, 247, 0.1);
-  --secondary: #1a2540;
-  --white: #f0f4ff;
-  --gray: #8a96b0;
-  --gray-dark: #3a4560;
+  --color-bg: #0a0e1a;
+  --color-surface: #111827;
+  --color-primary: #4f8ef7;
+  --color-primary-dim: rgba(79, 142, 247, 0.1);
+  --color-secondary: #1a2540;
+  --color-white: #f0f4ff;
+  --color-gray: #8a96b0;
+  --color-gray-dark: #3a4560;
   --font-eng: 'Syne', sans-serif;
   --font-code: 'DM Mono', monospace;
   --font-default: 'Pretendard', sans-serif;
