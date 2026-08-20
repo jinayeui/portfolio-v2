@@ -1,12 +1,11 @@
 .section {
-  padding: 8rem 0;
+  padding: 8rem 1.5rem;
   overflow: hidden;
 }
 
 .inner {
   width: min(100%, 1200px);
   margin: 0 auto;
-  padding: 0 1.5rem;
 }
 
 .sectionLabel {
@@ -42,11 +41,7 @@
 
 @media all and (max-width: 768px) {
   .section {
-    padding: 5rem 0;
-  }
-
-  .inner {
-    padding: 0 1.25rem;
+    padding: 5rem 1.25rem;
   }
 
   .title {
