@@ -15,8 +15,8 @@ export default function About() {
           디자인부터 구축과 유지보수, 운영까지 <strong>전 과정에서 경험</strong>을 쌓았습니다.<br />
           <strong>시맨틱 마크업</strong>과 <strong>웹 접근성</strong> 준수를 기본으로, <strong>재사용성</strong>과 <strong>성능 최적화</strong>를 고려한 코드 설계를 지향합니다.<br />
           <strong>강한 책임감</strong>으로 맡은 프로젝트를 집요하게 파고 들어 최선의 결과물을 도출합니다.<br />
-          배우고 성장하는 것에 대한 의지가 크며, 끊임없이 노력하고 있습니다.<br />
-          현재는 <strong>프론트엔드 기술을 학습</strong>하며, 더 넓은 기술적 성장을 이어나가고자 합니다.
+          배우고 성장하는 것에 대한 의지가 크며, 끊임없이 노력합니다.<br />
+          현재는 <strong>프론트엔드 기술을 학습</strong>하며, 더 넓은 기술적 성장을 이어나가고 있습니다.
         </p>
 
         <div className={styles.btnWrap}>
