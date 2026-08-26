@@ -16,6 +16,7 @@ const filters: { key: ProjectFilter; label: string }[] = [
   { key: 'all', label: 'ALL' },
   { key: 'company', label: 'COMPANY' },
   { key: 'personal', label: 'PERSONAL' },
+  // { key: 'design', label: 'DESIGN' },
 ];
 
 export default function Projects() {
