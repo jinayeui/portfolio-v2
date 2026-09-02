@@ -14,7 +14,7 @@ export interface Career {
   tags: string[];
 }
 
-export type ProjectCategory = 'company' | 'personal' | 'design';
+export type ProjectCategory = 'publishing' | 'design';
 
 export interface Project {
   id: string;
