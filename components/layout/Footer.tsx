@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <p className={styles.text}>
-        © {new Date().getFullYear()} {personalInfo.name}. Built with Next.js
+        © {new Date().getFullYear()} Portfolio. Built with Next.js
       </p>
     </footer>
   );

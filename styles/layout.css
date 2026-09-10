@@ -27,7 +27,7 @@
   & .labelLine {
     flex: 1;
     height: 1px;
-    background: var(--color-secondary);
+    background: var(--color-primary-dim);
   }
 }
 

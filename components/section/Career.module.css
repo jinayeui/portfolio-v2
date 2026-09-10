@@ -8,7 +8,7 @@
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
     padding-bottom: 3.5rem;
-    border-bottom: 1px solid var(--color-secondary);
+    border-bottom: 1px solid var(--color-gray);
 
     &:last-child {
       border-bottom: none;
@@ -20,7 +20,7 @@
       font-family: var(--font-code);
       font-weight: 400;
       font-size: 0.8rem;
-      color: var(--color-gray-dark);
+      color: var(--color-gray);
       letter-spacing: 0.08em;
     }
 
@@ -32,6 +32,7 @@
 
     & .role {
       font-size: 1rem;
+      font-weight: 500;
       color: var(--color-primary);
     }
   }
@@ -43,7 +44,7 @@
         gap: 0.75rem;
         margin-bottom: 1.4rem;
         font-size: 1.1rem;
-        color: var(--color-gray);
+        font-weight: 300;
         line-height: 1.2;
 
         &:last-child {

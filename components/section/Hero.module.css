@@ -70,7 +70,7 @@
   }
 
   & em {
-    -webkit-text-stroke: 1px var(--color-primary);
+    -webkit-text-stroke: 1px var(--color-black);
     color: transparent;
     font-style: normal;
   }
@@ -85,7 +85,7 @@
   font-family: var(--font-code);
   font-weight: 400;
   font-size: 0.68rem;
-  color: var(--color-gray-dark);
+  color: var(--color-gray);
   letter-spacing: 0.1em;
   animation: blink 2s linear infinite;
 }
@@ -163,13 +163,3 @@
     filter: blur(40px);
   }
 }
-
-/* .deco {
-  position: absolute;
-  top: 20%;
-  right: -100px;
-  width: 1px;
-  height: 200px;
-  background: linear-gradient(to bottom, transparent, var(--color-primary), transparent);
-  opacity: 0.4;
-} */
