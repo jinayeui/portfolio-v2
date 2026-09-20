@@ -1,3 +1,25 @@
+/* GSAP pin 영역: 화면 높이만큼 채우고 콘텐츠를 세로 중앙에 배치 */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-block: 5rem 3rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #about {
+    min-height: 0;
+    padding-block: 8rem;
+  }
+
+  .techstack {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+}
+
 :global(.title).center {
   text-align: center;
   margin-bottom: 3rem;
@@ -20,7 +42,72 @@
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
-  margin: 4rem auto 0;
+  margin: 3rem auto 4rem;
+}
+
+.techstack {
+  display: flex;
+  gap: 1.5rem;
+
+  & .skill {
+    flex: 0 0 auto;
+    width: min(80vw, 28rem);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 0.5rem;
+    padding: 2rem;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 15px;
+    transition: 0.3s;
+
+    & dt {
+      margin-bottom: 1rem;
+      font-family: var(--font-code);
+      font-weight: 400;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      padding: 0.5rem 0.8rem;
+      border: 1px solid var(--color-primary);
+      background-color: var(--color-primary-dim);
+      color: var(--color-primary);
+      border-radius: 50px;
+      white-space: nowrap;
+      transition: 0.3s;
+    }
+
+    & dd {
+      flex-basis: 100%;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      letter-spacing: -0.02em;
+
+      & strong {
+        font-weight: 600;
+        color: var(--color-primary);
+        transition: 0.3s;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      color: var(--color-white);
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+
+      & dt {
+        border-color: var(--color-white);
+        background-color: rgba(255, 255, 255, 0.12);
+        color: var(--color-white);
+      }
+
+      & dd strong {
+        color: var(--color-white);
+        background: linear-gradient(transparent 62%, rgba(255, 255, 255, 0.3) 62%);
+      }
+    }
+  }
 }
 
 .marquee {
@@ -60,6 +147,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  #about {
+    padding-block: 4.5rem 2rem;
+  }
+
   .text {
     font-size: 1rem;
     line-height: 1.8;
@@ -72,6 +163,19 @@
     & :global(.btnEmail),
     & :global(.btnGithub) {
       width: 100%;
+    }
+  }
+
+  .techstack {
+    gap: 1rem;
+
+    & .skill {
+      min-height: 0;
+      padding: 1.6rem;
+
+      & dd {
+        font-size: 1rem;
+      }
     }
   }
 
