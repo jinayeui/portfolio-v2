@@ -16,26 +16,26 @@ export default function About() {
                 <dt>HTML5</dt>
                 <dt>CSS3</dt>
                 <dd>
-                  <strong>시맨틱 마크업</strong>과 <strong>웹 접근성</strong> 준수를 기본으로, <strong>CSS 변수</strong> 활용으로 <strong>유지보수성</strong>을 높여요.
+                  <strong>시맨틱 마크업</strong>과 <strong>웹 접근성</strong> 준수를 기본으로, <strong>CSS 변수</strong> 활용으로 <strong>유지보수성</strong>을 높여요💻
                 </dd>
               </div>
               <div className={styles.skill}>
                 <dt>JavaScript</dt>
                 <dt>jQuery</dt>
                 <dd>
-                  <strong>바닐라 자바스크립트</strong> 중심으로, <strong>성능 최적화</strong>를 고려한 코드 설계를 지향해요.
+                  <strong>바닐라 자바스크립트</strong> 중심으로, <strong>성능 최적화</strong>를 고려한 코드 설계를 지향해요🔍
                 </dd>
               </div>
               <div className={styles.skill}>
                 <dt>Responsive Web</dt>
                 <dd>
-                  전 구간에서 깨짐 없이 대응하는 <strong>반응형 웹</strong>을 구현해요.
+                  전 구간에서 깨짐 없는 <strong>반응형 웹</strong>을 구현해요📲
                 </dd>
               </div>
               <div className={styles.skill}>
                 <dt>Git</dt>
                 <dd>
-                  Git 기반 <strong>형상 관리</strong>와 <strong>협업</strong> 경험이 있어요.
+                  Git 기반 <strong>형상 관리</strong>와 <strong>협업</strong> 경험이 있어요📂
                 </dd>
               </div>
               <div className={styles.skill}>
@@ -43,7 +43,7 @@ export default function About() {
                 <dt>Next.js</dt>
                 <dt>TypeScript</dt>
                 <dd>
-                  <strong>프론트엔드 기술을 학습 중</strong>이에요.
+                  <strong>프론트엔드 기술을 학습 중</strong>이에요📚
                 </dd>
               </div>
             </dl>
