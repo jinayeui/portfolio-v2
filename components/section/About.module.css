@@ -63,7 +63,6 @@
     transition: 0.3s;
 
     & dt {
-      margin-bottom: 1rem;
       font-family: var(--font-code);
       font-weight: 400;
       font-size: 0.75rem;
@@ -79,6 +78,7 @@
 
     & dd {
       flex-basis: 100%;
+      margin-top: 1rem;
       font-size: 1.1rem;
       line-height: 1.6;
       letter-spacing: -0.02em;
