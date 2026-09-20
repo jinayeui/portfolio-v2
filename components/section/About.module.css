@@ -57,10 +57,10 @@
     align-content: flex-start;
     gap: 0.5rem;
     padding: 2rem;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-black);
+    border: 1px solid var(--color-gray);
     border-radius: 15px;
-    transition: 0.3s;
+    color: var(--color-gray);
+    transition: 0.2s;
 
     & dt {
       font-family: var(--font-code);
@@ -68,12 +68,10 @@
       font-size: 0.75rem;
       letter-spacing: 0.05em;
       padding: 0.5rem 0.8rem;
-      border: 1px solid var(--color-primary);
-      background-color: var(--color-primary-dim);
-      color: var(--color-primary);
+      border: 1px solid var(--color-gray);
       border-radius: 50px;
       white-space: nowrap;
-      transition: 0.3s;
+      transition: 0.2s;
     }
 
     & dd {
@@ -82,29 +80,26 @@
       font-size: 1.1rem;
       line-height: 1.6;
       letter-spacing: -0.02em;
+      transition: 0.2s;
 
       & strong {
         font-weight: 600;
-        color: var(--color-primary);
-        transition: 0.3s;
       }
     }
 
-    &:hover {
+    &:global(.on) {
       transform: translateY(-6px);
-      color: var(--color-white);
-      background-color: var(--color-primary);
       border-color: var(--color-primary);
+      color: var(--color-black);
 
       & dt {
-        border-color: var(--color-white);
-        background-color: rgba(255, 255, 255, 0.12);
-        color: var(--color-white);
+        border-color: var(--color-primary);
+        background-color: var(--color-primary-dim);
+        color: var(--color-primary);
       }
 
       & dd strong {
-        color: var(--color-white);
-        background: linear-gradient(transparent 62%, rgba(255, 255, 255, 0.3) 62%);
+        color: var(--color-primary);
       }
     }
   }
