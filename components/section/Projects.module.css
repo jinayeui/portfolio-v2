@@ -19,13 +19,10 @@
   .filterTab {
     border-radius: 50px;
     border: 1px solid var(--color-black);
-    background-color: transparent;
     font-weight: 600;
     font-size: 0.75rem;
     letter-spacing: 0.06em;
     padding: 0.7rem 1.2rem;
-    white-space: nowrap;
-    cursor: pointer;
     transition: border-color 0.2s, color 0.2s, background-color 0.2s;
 
     &:hover {

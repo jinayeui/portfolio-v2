@@ -62,4 +62,5 @@ ul {
 button {
     background-color: transparent;
     color: var(--color-black);
+    cursor: pointer;
 }
