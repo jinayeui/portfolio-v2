@@ -16,7 +16,6 @@
 # next.js
 /.next/
 /out/
-next.config.ts
 
 # production
 /build
@@ -41,10 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Agent
-AGENTS.md
-/.github
+# docs
 /docs
-
-# data
-/data

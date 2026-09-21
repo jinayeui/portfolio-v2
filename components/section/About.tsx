@@ -2,7 +2,7 @@ import { personalInfo } from '@/data/portfolio';
 import Section from '@/components/layout/Section';
 import Title from '@/components/ui/Title';
 import Button from '@/components/ui/Button';
-import HorizontalScroll from '@/components/ui/HorizontalScroll';
+import HorizontalScroll from '@/components/features/HorizontalScroll';
 import styles from './About.module.css';
 
 export default function About() {
