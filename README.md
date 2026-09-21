@@ -17,8 +17,8 @@ Next.js + TypeScript + CSS Modules 기반 포트폴리오 프로젝트입니다.
 
 | 섹션 | 설명 |
 | --- | --- |
-| Hero | 메인 타이틀 |
-| About | 소개와 기술 스택 (GSAP 가로 스크롤) |
+| Hero | 메인 비주얼 |
+| About | 소개와 기술 스택 |
 | Career | 경력 |
 | Projects | 프로젝트 목록 |
 

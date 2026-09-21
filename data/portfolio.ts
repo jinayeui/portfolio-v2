@@ -53,6 +53,13 @@ export const careers: Career[] = [
 
 const rawProjects: Omit<Project, 'id'>[] = [
   {
+    title: '포트폴리오',
+    subtitle: 'Claude Code·Next.js·TypeScript',
+    url: 'https://github.com/jinayeui/portfolio-v2',
+    thumbnail: '/images/portfolio.jpg',
+    category: 'publishing',
+  },
+  {
     title: '올리브영',
     subtitle: '온라인몰 퍼블리싱 운영',
     url: 'https://foggy-napkin-4b2.notion.site/3716da1da01180a19635d45220152d55?source=copy_link',
@@ -97,14 +104,14 @@ const rawProjects: Omit<Project, 'id'>[] = [
   },
   {
     title: '그랜드하얏트',
-    subtitle: '리디자인/반응형',
+    subtitle: '리디자인·반응형',
     url: 'https://github.com/jinayeui/GrandHyatt',
     thumbnail: '/images/grandhyatt.jpg',
     category: 'publishing'
   },
   {
     title: '메리플래닛',
-    subtitle: '리디자인/반응형',
+    subtitle: '리디자인·반응형',
     url: 'https://github.com/jinayeui/merryplanet',
     thumbnail: '/images/merryplanet.jpg',
     category: 'publishing'

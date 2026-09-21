@@ -58,18 +58,14 @@
     }
   }
 
-  & li:hover .thumb .thumbImg {
-    transform: scale(1.06);
-  }
-
   & .desc {
     padding: 1.25rem 0;
     text-align: center;
 
     & .subTit {
       font-family: var(--font-code);
-      font-weight: 400;
-      font-size: 0.7rem;
+      font-weight: 500;
+      font-size: 0.75rem;
       color: var(--color-gray);
       letter-spacing: 0.08em;
       margin-bottom: 0.6rem;
@@ -83,8 +79,18 @@
     }
   }
 
-  & li:hover .desc .tit {
-    color: var(--color-primary);
+  & li:hover {
+    & .thumb {
+      box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+
+      & .thumbImg {
+        transform: scale(1.06);
+      }
+    }
+
+    & .desc .tit {
+      color: var(--color-primary);
+    }
   }
 }
 
