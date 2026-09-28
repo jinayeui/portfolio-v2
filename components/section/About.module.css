@@ -56,7 +56,7 @@
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 0.5rem;
-    padding: 2rem;
+    padding: 3rem 2rem;
     border: 1px solid var(--color-gray);
     border-radius: 15px;
     color: var(--color-gray);
@@ -105,7 +105,7 @@
   }
 }
 
-.marquee {
+/* .marquee {
   --marquee-gap: 3.2rem;
   overflow: hidden;
   white-space: nowrap;
@@ -129,9 +129,9 @@
       animation: marquee 18s linear infinite;
     }
   }
-}
+} */
 
-@keyframes marquee {
+/* @keyframes marquee {
   0% {
     transform: translateX(0);
   }
@@ -139,7 +139,7 @@
   100% {
     transform: translateX(calc(-100% - var(--marquee-gap)));
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   #about {
@@ -174,7 +174,7 @@
     }
   }
 
-  .marquee {
+  /* .marquee {
     --marquee-gap: 1.2rem;
-  }
+  } */
 }

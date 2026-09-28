@@ -73,22 +73,9 @@ export default function About() {
               ariaLabel='이메일 보내기'
               className={'btnEmail'}
             />
-            <Button
-              text={'👩🏻‍💻 GitHub'}
-              href={personalInfo.github}
-              ariaLabel={'GitHub 열기'}
-              className={'btnGithub'}
-            />
           </div>
         </HorizontalScroll>
       </Section>
-
-      {/* <div className={styles.marquee}>
-        <ul>
-          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js TypeScript</li>
-          <li>HTML5 CSS3 SCSS JavaScript jQuery React Next.js TypeScript</li>
-        </ul>
-      </div> */}
     </>
   );
 }
