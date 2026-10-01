@@ -2,7 +2,7 @@ import { Career, PersonalInfo, Project } from '@/types/portfolio';
 
 export const personalInfo: PersonalInfo = {
   name: '정지나',
-  role: 'Web Publisher',
+  role: 'Web Publisher & Frontend Developer',
   phone: '010-2562-1037',
   email: 'dev.jnjeong@gmail.com',
   github: 'https://github.com/jinayeui',
@@ -97,7 +97,7 @@ const rawProjects: Omit<Project, 'id'>[] = [
   },
   {
     title: 'To-do List',
-    subtitle: 'React',
+    subtitle: 'React·styled-components',
     url: 'https://github.com/jinayeui/my-todo-app',
     thumbnail: '/images/todolist.jpg',
     category: 'publishing'
