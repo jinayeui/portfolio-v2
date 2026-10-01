@@ -1,17 +1,16 @@
 # Portfolio
 
-웹 퍼블리셔 정지나의 포트폴리오 사이트입니다.
-Next.js + TypeScript + CSS Modules 기반 포트폴리오 프로젝트입니다.
+Next.js + TypeScript + CSS Modules 기반 포트폴리오입니다.
 
-> 이 프로젝트의 개발 규칙(폴더 구조, 컴포넌트·네이밍·TypeScript 규칙, 접근성, CSS 작성 순서 등)은 [CLAUDE.md](./CLAUDE.md)에 정리해 두었고, Claude Code로 개발할 때 이 지침을 기준으로 작업했습니다.
+> 이 프로젝트의 개발 규칙(폴더 구조, 컴포넌트·네이밍·TypeScript 규칙, 접근성, CSS 작성 순서 등)은 [CLAUDE.md](./CLAUDE.md)에 정리해 두었고, Claude Code 개발 시 이 지침을 기준으로 작업했습니다.
 
 ## Tech Stack
 
-- **Framework**: Next.js (App Router), React
+- **Framework**: Next.js (App Router)
 - **Language**: TypeScript
 - **Styling**: CSS Modules
 - **Animation**: GSAP (ScrollTrigger), AOS
-- **Font**: Pretendard, Syne, DM Mono
+- **Deploy**: Vercel
 
 ## Sections
 
