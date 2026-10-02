@@ -66,10 +66,11 @@ project/
 - 모든 인터랙티브 요소는 키보드 접근 가능
 
 ## 네이밍 규칙
-- 컴포넌트/클래스: PascalCase (`Header`, `CareerItem`)
-- CSS Module 클래스: camelCase (`careerList`, `btnEmail`)
-- 변수/함수: camelCase (`handleClick`)
-- 상수: UPPER_SNAKE_CASE (`MAX_COUNT`)
+- 컴포넌트: PascalCase (예: `Header`, `HorizontalScroll`)
+- 타입/인터페이스: PascalCase (예: `ButtonProps`, `ProjectCategory`)
+- CSS Module 클래스: camelCase (예: `careerList`, `btnWrap`)
+- 변수/함수: camelCase (예: `handleClick`)
+- 상수: UPPER_SNAKE_CASE (예: `MAX_COUNT`)
 
 ## CSS 변수 네이밍 규칙
 - CSS 변수는 `styles/variables.css`에 정의하고, 색상·폰트는 변수 사용 (일회성 값은 예외)
