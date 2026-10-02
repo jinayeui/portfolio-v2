@@ -28,13 +28,6 @@ project/
 └─ public/        # 정적 파일
 ```
 
-## 이 프로젝트의 CSS 변수 네이밍
-- 배경: `--color-bg`
-- 포인트: `--color-primary`, `--color-primary-dim`
-- 보조: `--color-secondary`
-- 텍스트: `--color-black`, `--color-white`, `--color-gray`
-- 폰트: `--font-eng`(Syne), `--font-code`(DM Mono), `--font-default`(Pretendard)
-
 ## 컴포넌트 작성 규칙
 - 파일명 **PascalCase**: `Header.tsx`, `Button.tsx`
 - CSS Module 파일은 컴포넌트와 동일명: `Header.module.css`
@@ -77,6 +70,20 @@ project/
 - CSS Module 클래스: camelCase (`careerList`, `btnEmail`)
 - 변수/함수: camelCase (`handleClick`)
 - 상수: UPPER_SNAKE_CASE (`MAX_COUNT`)
+
+## CSS 변수 네이밍 규칙
+- CSS 변수는 `styles/variables.css`에 정의하고, 색상·폰트는 변수 사용 (일회성 값은 예외)
+- 색상: `--color-{역할}[-{단계}][-{변형}]`
+  - 역할: `primary`, `secondary`, `error` 등
+  - 단계: `50` ~ `900`, 숫자가 클수록 진한 색 (이 프로젝트는 단계 생략)
+  - 변형: 같은 색의 투명도 변형은 접미어 사용 (예: `--color-primary-dim`)
+- 무채색: 역할 대신 색 이름 사용 (예: `--color-black`, `--color-white`, `--color-gray[-{단계}]`)
+- 배경색: `--color-bg[-{변형}]` (예: `--color-bg-blue`, `--color-bg-gray`)
+- 폰트 패밀리: `--font-{용도}` (예: `--font-eng`, `--font-code`)
+- 폰트 굵기: `--font-weight-{이름}` (`thin`(100) ~ `black`(900))
+- 텍스트 스타일: `--text-{크기}-{굵기}` — `font` 단축 속성 값
+  - 크기: `xs` < `sm` < `md` < `lg` < `xl`
+  - 예: `--text-lg-bold: var(--font-weight-bold) 1.6rem/2.6rem 'Pretendard', sans-serif;`
 
 ## CSS 속성 선언 순서
 1. Positioning (`position`, `top`, `left`, `z-index`)

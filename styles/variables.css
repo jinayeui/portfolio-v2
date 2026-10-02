@@ -1,11 +1,14 @@
 :root {
-  --color-bg: #f9f9f9;
   --color-primary: #194898;
   --color-primary-dim: rgba(25, 72, 152, 0.1);
-  --color-secondary: #407fec;
+  --color-secondary: #e9e910;
+
   --color-white: #fff;
   --color-black: #1e1e1e;
   --color-gray: #afafaf;
+
+  --color-bg: #f9f9f9;
+
   --font-eng: 'Syne', sans-serif;
   --font-code: 'DM Mono', monospace;
   --font-default: 'Pretendard', sans-serif;
