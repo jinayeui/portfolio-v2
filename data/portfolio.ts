@@ -129,13 +129,6 @@ const rawProjects: Omit<Project, 'id'>[] = [
     url: 'https://foggy-napkin-4b2.notion.site/3cf6da1da01180fba8afe92d2873ae73',
     thumbnail: '/images/web.jpg',
     category: 'design'
-  },
-  {
-    title: 'BANNER',
-    subtitle: '디자인',
-    url: 'https://foggy-napkin-4b2.notion.site/3cf6da1da0118055984adce4b27cd1db',
-    thumbnail: '/images/banner.jpg',
-    category: 'design'
   }
 ];
 
