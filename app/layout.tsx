@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: '정지나 포트폴리오 | Web Publisher & Frontend Developer',
+  title: '정지나 포트폴리오 | UI Developer',
   description: '웹 퍼블리셔 & 프론트엔드 개발자 정지나의 포트폴리오입니다.',
 };
 

@@ -2,7 +2,7 @@ import { Career, PersonalInfo, Project } from '@/types/portfolio';
 
 export const personalInfo: PersonalInfo = {
   name: '정지나',
-  role: 'Web Publisher & Frontend Developer',
+  role: 'UI Developer',
   phone: '010-2562-1037',
   email: 'dev.jnjeong@gmail.com',
   github: 'https://github.com/jinayeui',

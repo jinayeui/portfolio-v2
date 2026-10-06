@@ -52,7 +52,7 @@ export default function About() {
           <Title className={styles.center}>About Me</Title>
 
           <p className={styles.text} data-aos='fade-in' data-aos-delay='200'>
-            안녕하세요, 웹 퍼블리셔 & 프론트엔드 개발자 정지나입니다. ☻<br />
+            안녕하세요, UI 개발자 정지나입니다. ☻<br />
             디자인부터 구축, 운영까지 <strong>전 과정에서 경험</strong>을 쌓았습니다.<br />
             <strong>강한 책임감</strong>으로 맡은 프로젝트를 집요하게 파고 들어 최선의 결과물을 도출합니다.
           </p>
