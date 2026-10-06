@@ -54,7 +54,7 @@ export const careers: Career[] = [
 const rawProjects: Omit<Project, 'id'>[] = [
   {
     title: '포트폴리오',
-    subtitle: 'Claude Code·Next.js·TypeScript',
+    subtitle: 'Claude·Next.js·TypeScript',
     url: 'https://github.com/jinayeui/portfolio-v2',
     thumbnail: '/images/portfolio.jpg',
     category: 'publishing',
