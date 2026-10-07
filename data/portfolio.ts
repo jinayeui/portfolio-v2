@@ -33,7 +33,7 @@ export const careers: Career[] = [
     role: '디자인팀 - 웹 디자이너/퍼블리셔',
     period: '2021.10 ~ 2022.11',
     description: [
-      '클라이언트사 B2B/B2C 웹사이트 구축 및 고도화',
+      'B2B·B2C 웹사이트 구축 및 고도화',
       '자사몰 유지보수',
       'XE, 카페24 기반 퍼블리싱',
       'UI/UX 디자인',
