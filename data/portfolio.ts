@@ -53,18 +53,32 @@ export const careers: Career[] = [
 
 const rawProjects: Omit<Project, 'id'>[] = [
   {
-    title: '포트폴리오',
-    subtitle: 'Claude·Next.js·TypeScript',
-    url: 'https://github.com/jinayeui/portfolio-v2',
-    thumbnail: '/images/portfolio.jpg',
-    category: 'publishing',
+    title: '판다마켓',
+    subtitle: 'Figma 디자인 시스템 기반',
+    url: 'https://github.com/jinayeui/panda-market',
+    thumbnail: '/images/pandamarket.jpg',
+    category: 'personal',
   },
   {
     title: '올리브영',
     subtitle: '온라인몰 퍼블리싱 운영',
     url: 'https://foggy-napkin-4b2.notion.site/3716da1da01180a19635d45220152d55?source=copy_link',
     thumbnail: '/images/oliveyoung.jpg',
-    category: 'publishing',
+    category: 'work',
+  },
+  {
+    title: 'To-do List',
+    subtitle: 'React·styled-components',
+    url: 'https://github.com/jinayeui/my-todo-app',
+    thumbnail: '/images/todolist.jpg',
+    category: 'personal'
+  },
+  {
+    title: '포트폴리오',
+    subtitle: 'Claude·Next.js·TypeScript',
+    url: 'https://github.com/jinayeui/portfolio-v2',
+    thumbnail: '/images/portfolio.jpg',
+    category: 'personal',
   },
   {
     title: '리얼EMS',
@@ -72,63 +86,35 @@ const rawProjects: Omit<Project, 'id'>[] = [
     contribution: '퍼블리싱 90%',
     url: 'https://foggy-napkin-4b2.notion.site/EMS-3716da1da0118029ab68fe32d9140641?source=copy_link',
     thumbnail: '/images/realems.jpg',
-    category: 'publishing',
+    category: 'work',
   },
   {
     title: '세라빔',
     subtitle: '카페24 쇼핑몰 리뉴얼',
     url: 'https://foggy-napkin-4b2.notion.site/3716da1da011807286b1e1ce81eae8c3?source=copy_link',
     thumbnail: '/images/cerabeam.jpg',
-    category: 'publishing',
+    category: 'work',
   },
   {
     title: '법률사무소 청한',
     subtitle: 'XE 사이트 구축',
     url: 'https://foggy-napkin-4b2.notion.site/3716da1da0118078a8f0e6b7ff9ec302?source=copy_link',
     thumbnail: '/images/chanlaw.jpg',
-    category: 'publishing',
+    category: 'work',
   },
   {
     title: '지애드스포츠',
     subtitle: 'XE 사이트 구축',
     url: 'https://foggy-napkin-4b2.notion.site/3716da1da01180ecb8d6dbacad0603fc?source=copy_link',
     thumbnail: '/images/gadsports.jpg',
-    category: 'publishing',
-  },
-  {
-    title: 'To-do List',
-    subtitle: 'React·styled-components',
-    url: 'https://github.com/jinayeui/my-todo-app',
-    thumbnail: '/images/todolist.jpg',
-    category: 'publishing'
+    category: 'work',
   },
   {
     title: '그랜드하얏트',
     subtitle: '리디자인·반응형',
     url: 'https://github.com/jinayeui/GrandHyatt',
     thumbnail: '/images/grandhyatt.jpg',
-    category: 'publishing'
-  },
-  {
-    title: '메리플래닛',
-    subtitle: '리디자인·반응형',
-    url: 'https://github.com/jinayeui/merryplanet',
-    thumbnail: '/images/merryplanet.jpg',
-    category: 'publishing'
-  },
-  {
-    title: 'APP',
-    subtitle: '디자인',
-    url: 'https://scene.zeplin.io/project/62c7d6a7831e6319948c603e',
-    thumbnail: '/images/app.jpg',
-    category: 'design'
-  },
-  {
-    title: 'WEB',
-    subtitle: '디자인',
-    url: 'https://foggy-napkin-4b2.notion.site/3cf6da1da01180fba8afe92d2873ae73',
-    thumbnail: '/images/web.jpg',
-    category: 'design'
+    category: 'personal'
   }
 ];
 

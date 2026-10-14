@@ -14,12 +14,12 @@ type ProjectFilter = 'all' | ProjectCategory;
 
 const filters: { key: ProjectFilter; label: string }[] = [
   { key: 'all', label: 'ALL' },
-  { key: 'publishing', label: 'PUBLISHING' },
-  { key: 'design', label: 'DESIGN' },
+  { key: 'work', label: 'WORK' },
+  { key: 'personal', label: 'PERSONAL' },
 ];
 
 export default function Projects() {
-  const [activeFilter, setActiveFilter] = useState<ProjectFilter>('publishing');
+  const [activeFilter, setActiveFilter] = useState<ProjectFilter>('all');
 
   const filteredProjects = useMemo(
     () =>
