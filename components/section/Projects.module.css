@@ -6,7 +6,7 @@
   margin-bottom: 5rem;
   flex-wrap: wrap;
 
-  & :global(.title) {
+  :global(.title) {
     margin-bottom: 0;
   }
 }
@@ -17,23 +17,23 @@
   margin-bottom: 2.5rem;
 
   .filterTab {
-    border-radius: 50px;
-    border: 1px solid var(--color-black);
+    padding: 0.7rem 1.2rem;
     font-weight: 600;
     font-size: 0.75rem;
     letter-spacing: 0.06em;
-    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    border: 1px solid var(--color-black);
     transition: border-color 0.2s, color 0.2s, background-color 0.2s;
 
     &:hover {
-      border-color: var(--color-primary);
       color: var(--color-primary);
+      border-color: var(--color-primary);
     }
 
     &.isActive {
+      color: var(--color-primary);
       border-color: var(--color-primary);
       background-color: var(--color-primary-dim);
-      color: var(--color-primary);
     }
   }
 }
@@ -43,13 +43,13 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.8rem;
 
-  & .thumb {
+  .thumb {
     width: 100%;
     aspect-ratio: 16 / 10;
     overflow: hidden;
     border-radius: 10px;
 
-    & .thumbImg {
+    .thumbImg {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -58,20 +58,20 @@
     }
   }
 
-  & .desc {
+  .desc {
     padding: 1.25rem 0;
     text-align: center;
 
-    & .subTit {
+    .subTit {
+      margin-bottom: 0.6rem;
       font-family: var(--font-code);
       font-weight: 500;
       font-size: 0.75rem;
       color: var(--color-gray);
       letter-spacing: 0.08em;
-      margin-bottom: 0.6rem;
     }
 
-    & .tit {
+    .tit {
       font-size: 1.5rem;
       font-weight: 700;
       letter-spacing: -0.01em;
@@ -79,16 +79,16 @@
     }
   }
 
-  & li:hover {
-    & .thumb {
+  li:hover {
+    .thumb {
       box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 
-      & .thumbImg {
+      .thumbImg {
         transform: scale(1.06);
       }
     }
 
-    & .desc .tit {
+    .desc .tit {
       color: var(--color-primary);
     }
   }

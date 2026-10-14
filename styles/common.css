@@ -12,8 +12,8 @@
 }
 
 ::selection {
-    background: var(--color-secondary);
     color: var(--color-black);
+    background: var(--color-secondary);
 }
 
 * {
@@ -31,13 +31,13 @@ body {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     word-break: keep-all;
-    background-color: var(--color-bg);
     font-family: var(--font-default);
+    background-color: var(--color-bg);
 }
 
 #wrap {
-    color: var(--color-black);
     overflow: hidden;
+    color: var(--color-black);
 }
 
 a {
@@ -58,7 +58,7 @@ ul {
 }
 
 button {
-    background-color: transparent;
     color: inherit;
+    background-color: transparent;
     cursor: pointer;
 }
