@@ -81,10 +81,9 @@ project/
 - 무채색: 역할 대신 색 이름 사용 (예: `--color-black`, `--color-white`, `--color-gray[-{단계}]`)
 - 배경색: `--color-bg[-{변형}]` (예: `--color-bg-blue`, `--color-bg-gray`)
 - 폰트 패밀리: `--font-{용도}` (예: `--font-eng`, `--font-code`)
-- 폰트 굵기: `--font-weight-{이름}` (`thin`(100) ~ `black`(900))
 - 텍스트 스타일: `--text-{크기}-{굵기}` — `font` 단축 속성 값
   - 크기: `xs` < `sm` < `md` < `lg` < `xl`
-  - 예: `--text-lg-bold: var(--font-weight-bold) 1.6rem/2.6rem 'Pretendard', sans-serif;`
+  - 예: `--text-lg-bold: 700 1.6rem/2.6rem 'Pretendard', sans-serif;`
 
 ## CSS 속성 선언 순서
 1. Positioning (`position`, `top`, `left`, `z-index`)
