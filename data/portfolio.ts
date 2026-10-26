@@ -2,7 +2,7 @@ import { Career, PersonalInfo, Project } from '@/types/portfolio';
 
 export const personalInfo: PersonalInfo = {
   name: '정지나',
-  role: 'UI Developer',
+  role: 'UI Developer & Service Planner',
   phone: '010-2562-1037',
   email: 'dev.jnjeong@gmail.com',
   github: 'https://github.com/jinayeui',
@@ -15,7 +15,7 @@ export const careers: Career[] = [
     period: '2023.06 ~ 2026.08',
     description: [
       'CJ올리브영 온라인몰 운영 및 제안 퍼블리싱',
-      '카페24 분석 및 가이드 제작',
+      '카페24 분석 및 부서 공용 가이드 제작',
       '나이키 코리아 .COM/APP 운영 (CMS 기반 PDP 콘텐츠 업데이트)',
     ],
     tags: [
@@ -36,8 +36,7 @@ export const careers: Career[] = [
       'B2B·B2C 웹사이트 구축 및 고도화',
       '자사몰 유지보수',
       'XE, 카페24 기반 퍼블리싱',
-      'UI/UX 디자인',
-      '웹 콘텐츠 디자인',
+      '웹 콘텐츠 및 UI/UX 디자인',
     ],
     tags: [
       'HTML5',
