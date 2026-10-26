@@ -52,18 +52,18 @@ export const careers: Career[] = [
 
 const rawProjects: Omit<Project, 'id'>[] = [
   {
+    title: '올리브영',
+    subtitle: '온라인몰 퍼블리싱 운영 및 제안',
+    url: 'https://foggy-napkin-4b2.notion.site/3716da1da01180a19635d45220152d55?source=copy_link',
+    thumbnail: '/images/oliveyoung.jpg',
+    category: 'work',
+  },
+  {
     title: '판다마켓',
     subtitle: 'Figma 디자인 시스템 기반',
     url: 'https://github.com/jinayeui/panda-market',
     thumbnail: '/images/pandamarket.jpg',
     category: 'personal',
-  },
-  {
-    title: '올리브영',
-    subtitle: '온라인몰 퍼블리싱 운영',
-    url: 'https://foggy-napkin-4b2.notion.site/3716da1da01180a19635d45220152d55?source=copy_link',
-    thumbnail: '/images/oliveyoung.jpg',
-    category: 'work',
   },
   {
     title: 'To-do List',
@@ -111,7 +111,7 @@ const rawProjects: Omit<Project, 'id'>[] = [
   {
     title: '그랜드하얏트',
     subtitle: '리디자인·반응형',
-    url: 'https://github.com/jinayeui/GrandHyatt',
+    url: 'https://jinayeui.github.io/GrandHyatt',
     thumbnail: '/images/grandhyatt.jpg',
     category: 'personal'
   }
