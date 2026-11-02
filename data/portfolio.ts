@@ -60,7 +60,7 @@ const rawProjects: Omit<Project, 'id'>[] = [
   },
   {
     title: '판다마켓',
-    subtitle: 'Figma 디자인 시스템 기반',
+    subtitle: '디자인 토큰·API 연동·모듈화',
     url: 'https://github.com/jinayeui/panda-market',
     thumbnail: '/images/pandamarket.jpg',
     category: 'personal',
