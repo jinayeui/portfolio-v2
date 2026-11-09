@@ -73,13 +73,6 @@ const rawProjects: Omit<Project, 'id'>[] = [
     category: 'personal'
   },
   {
-    title: '포트폴리오',
-    subtitle: 'Claude·Next.js·TypeScript',
-    url: 'https://github.com/jinayeui/portfolio-v2',
-    thumbnail: '/images/portfolio.jpg',
-    category: 'personal',
-  },
-  {
     title: '리얼EMS',
     subtitle: '카페24 쇼핑몰 구축',
     contribution: '퍼블리싱 90%',
