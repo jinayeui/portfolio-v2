@@ -15,36 +15,41 @@ export default function About() {
               <div className={styles.skill}>
                 <dt>HTML5</dt>
                 <dt>CSS3</dt>
+                <dt>SCSS</dt>
                 <dd>
-                  <strong>시맨틱 마크업</strong>과 <strong>웹 접근성</strong> 준수를 기본으로,<br />
-                  <strong>디자인 시스템을 CSS 변수</strong>로 체계화해 <strong>유지보수성</strong>을 높여요 💻
+                  <ul>
+                    <li>시맨틱 마크업, 웹 접근성 준수</li>
+                    <li>CSS 변수 기반 디자인 시스템 구축</li>
+                  </ul>
                 </dd>
               </div>
               <div className={styles.skill}>
                 <dt>JavaScript</dt>
                 <dt>jQuery</dt>
                 <dd>
-                  <strong>바닐라 자바스크립트</strong> 중심으로, <strong>성능 최적화</strong>를 고려한 코드 설계를 지향해요 🔍
-                </dd>
-              </div>
-              <div className={styles.skill}>
-                <dt>Responsive Web</dt>
-                <dd>
-                  전 구간에서 깨짐 없는 <strong>반응형 웹</strong>을 구현해요 📲
-                </dd>
-              </div>
-              <div className={styles.skill}>
-                <dt>Git</dt>
-                <dd>
-                  Git 기반 <strong>버전 관리</strong>와 <strong>협업</strong> 경험이 있어요 📂
+                  <ul>
+                    <li>바닐라 JS 중심 개발</li>
+                    <li>성능을 고려한 코드 설계</li>
+                  </ul>
                 </dd>
               </div>
               <div className={styles.skill}>
                 <dt>React</dt>
                 <dt>Next.js</dt>
-                <dt>TypeScript</dt>
                 <dd>
-                  <strong>프론트엔드 기술을 학습 중</strong>이에요 📚
+                  <ul>
+                    <li>컴포넌트 단위 UI 구현</li>
+                    <li>props를 통한 데이터 전달, 상태 관리</li>
+                    <li>TypeScript 학습 중</li>
+                  </ul>
+                </dd>
+              </div>
+              <div className={styles.skill}>
+                <dt>Git</dt>
+                <dd>
+                  <ul>
+                    <li>Git 기반 버전 관리, 협업</li>
+                  </ul>
                 </dd>
               </div>
             </dl>
@@ -54,7 +59,7 @@ export default function About() {
 
           <p className={styles.text} data-aos='fade-in' data-aos-delay='200'>
             안녕하세요, UI 개발자 정지나입니다. ☻<br />
-            디자인부터 구축, 운영까지 <strong>전 과정에서 경험</strong>을 쌓았습니다.<br />
+            디자인부터 구축과 운영까지 <strong>전 과정에서 경험</strong>을 쌓았습니다.<br />
             경험을 바탕으로 <strong>역할에 한계를 두지 않고</strong> 서비스 전반에 기여하고 싶습니다.<br />
             <strong>강한 책임감</strong>으로 맡은 프로젝트를 집요하게 파고 들어 최선의 결과물을 도출하겠습니다.
           </p>

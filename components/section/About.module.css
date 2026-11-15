@@ -82,8 +82,30 @@
       letter-spacing: -0.02em;
       transition: 0.2s;
 
-      strong {
-        font-weight: 600;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        position: relative;
+        padding-left: 1rem;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0.75em;
+          left: 0;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: currentColor;
+          transition: 0.2s;
+        }
       }
     }
 
@@ -98,8 +120,8 @@
         background-color: var(--color-primary-dim);
       }
 
-      dd strong {
-        color: var(--color-primary);
+      dd li::before {
+        background-color: var(--color-primary);
       }
     }
   }
