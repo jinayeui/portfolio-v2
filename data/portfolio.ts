@@ -60,7 +60,7 @@ const rawProjects: Omit<Project, 'id'>[] = [
   },
   {
     title: '판다마켓',
-    subtitle: '디자인 토큰·API 연동·모듈화',
+    subtitle: 'React·tailwind·axios',
     url: 'https://github.com/jinayeui/panda-market',
     thumbnail: '/images/pandamarket.jpg',
     category: 'personal',
@@ -74,7 +74,7 @@ const rawProjects: Omit<Project, 'id'>[] = [
   },
   {
     title: '리얼EMS',
-    subtitle: '카페24 쇼핑몰 구축',
+    subtitle: '카페24 다국어 쇼핑몰 구축',
     contribution: '퍼블리싱 90%',
     url: 'https://foggy-napkin-4b2.notion.site/EMS-3716da1da0118029ab68fe32d9140641?source=copy_link',
     thumbnail: '/images/realems.jpg',
