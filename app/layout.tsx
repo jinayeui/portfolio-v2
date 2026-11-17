@@ -12,9 +12,31 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const SITE_TITLE = '정지나 포트폴리오 | UI Developer';
+const SITE_DESCRIPTION = 'UI 개발자 정지나의 포트폴리오입니다.';
+
+const SITE_URL = 'https://portfolio-jinajeong.vercel.app';
+
 export const metadata: Metadata = {
-  title: '정지나 포트폴리오 | UI Developer',
-  description: '웹 퍼블리셔 & 프론트엔드 개발자 정지나의 포트폴리오입니다.',
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: 'website',
+    locale: 'ko_KR',
+    url: '/',
+    siteName: '정지나 포트폴리오',
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: '/images/portfolio.jpg',
+        width: 1280,
+        height: 741,
+        alt: '정지나 포트폴리오',
+      },
+    ],
+  },
 };
 
 const syne = Syne({ subsets: ['latin'], weight: ['700'], variable: '--font-eng' });
