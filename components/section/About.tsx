@@ -26,10 +26,12 @@ export default function About() {
               <div className={styles.skill}>
                 <dt>JavaScript</dt>
                 <dt>jQuery</dt>
+                <dt>Axios</dt>
                 <dd>
                   <ul>
                     <li>바닐라 JS 중심 개발</li>
-                    <li>성능을 고려한 코드 설계</li>
+                    <li>성능을 고려한 코드 작성</li>
+                    <li>REST API 연동</li>
                   </ul>
                 </dd>
               </div>
@@ -37,11 +39,11 @@ export default function About() {
                 <dt>React</dt>
                 <dt>Next.js</dt>
                 <dt>styled-components</dt>
-                <dt>tailwind CSS</dt>
+                <dt>Tailwind CSS</dt>
                 <dd>
                   <ul>
-                    <li>컴포넌트 단위 UI 구현</li>
-                    <li>props를 통한 데이터 전달, 상태 관리</li>
+                    <li>컴포넌트 단위 UI 설계</li>
+                    <li>상태 변화에 따른 동적 UI 구현</li>
                     <li>TypeScript 학습 중</li>
                   </ul>
                 </dd>

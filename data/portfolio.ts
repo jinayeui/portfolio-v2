@@ -60,7 +60,7 @@ const rawProjects: Omit<Project, 'id'>[] = [
   },
   {
     title: '판다마켓',
-    subtitle: 'React·tailwind·axios',
+    subtitle: 'React·Tailwind CSS·Axios',
     url: 'https://github.com/jinayeui/panda-market',
     thumbnail: '/images/pandamarket.jpg',
     category: 'personal',
