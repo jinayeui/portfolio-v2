@@ -36,6 +36,8 @@ export default function About() {
               <div className={styles.skill}>
                 <dt>React</dt>
                 <dt>Next.js</dt>
+                <dt>styled-components</dt>
+                <dt>tailwind CSS</dt>
                 <dd>
                   <ul>
                     <li>컴포넌트 단위 UI 구현</li>
