@@ -30,7 +30,7 @@ export const careers: Career[] = [
   },
   {
     company: '팡홀딩스',
-    role: '디자인팀 - 웹 디자이너/퍼블리셔',
+    role: '디자인팀 - 웹디자이너/퍼블리셔',
     period: '2021.10 ~ 2022.11',
     description: [
       'B2B·B2C 웹사이트 구축 및 고도화',
