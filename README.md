@@ -9,7 +9,7 @@ Next.js + TypeScript + CSS Modules 기반 포트폴리오입니다.
 - **Framework**: Next.js (App Router)
 - **Language**: TypeScript
 - **Styling**: CSS Modules
-- **Animation**: GSAP (ScrollTrigger), AOS
+- **Animation**: AOS
 - **Deploy**: Vercel
 
 ## Sections

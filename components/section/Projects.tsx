@@ -3,11 +3,10 @@
 import { useMemo, useState } from 'react';
 import Image from 'next/image';
 import { projects } from '@/data/portfolio';
-import { ProjectCategory } from '@/types/portfolio';
+import type { ProjectCategory } from '@/types/portfolio';
 import Section from '@/components/layout/Section';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Title from '@/components/ui/Title';
-import Button from '@/components/ui/Button';
 import styles from './Projects.module.css';
 
 type ProjectFilter = 'all' | ProjectCategory;
@@ -38,35 +37,27 @@ export default function Projects() {
           <br />
           Archive
         </Title>
-        <Button
-          text={'VIEW MORE →'}
-          href={
-            'https://foggy-napkin-4b2.notion.site/3716da1da01180f7b323c3198d588343?source=copy_link'
-          }
-          ariaLabel={'경력기술서 열기'}
-          className={'btnMore'}
-        />
-      </div>
-
-      <div
-        className={styles.projectFilter}
-        role='tablist'
-        aria-label='프로젝트 필터'
-      >
-        {filters.map((filter) => (
-          <button
-            key={filter.key}
-            type='button'
-            role='tab'
-            aria-selected={activeFilter === filter.key}
-            className={`${styles.filterTab} ${
-              activeFilter === filter.key ? styles.isActive : ''
-            }`}
-            onClick={() => setActiveFilter(filter.key)}
-          >
-            {filter.label}
-          </button>
-        ))}
+        
+        <div
+          className={styles.projectFilter}
+          role='tablist'
+          aria-label='프로젝트 필터'
+        >
+          {filters.map((filter) => (
+            <button
+              key={filter.key}
+              type='button'
+              role='tab'
+              aria-selected={activeFilter === filter.key}
+              className={`${styles.filterTab} ${
+                activeFilter === filter.key ? styles.isActive : ''
+              }`}
+              onClick={() => setActiveFilter(filter.key)}
+            >
+              {filter.label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <ul

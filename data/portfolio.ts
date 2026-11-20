@@ -1,4 +1,4 @@
-import { Career, PersonalInfo, Project } from '@/types/portfolio';
+import type { Career, PersonalInfo, Project } from '@/types/portfolio';
 
 export const personalInfo: PersonalInfo = {
   name: '정지나',
@@ -16,16 +16,7 @@ export const careers: Career[] = [
     description: [
       'CJ올리브영 온라인몰 운영 및 제안 퍼블리싱',
       '카페24 분석 및 부서 공용 가이드 제작',
-      '나이키 코리아 .COM/APP 운영 (CMS 기반 PDP 콘텐츠 업데이트)',
-    ],
-    tags: [
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'Git',
-      'Jenkins',
-      'Photoshop',
-      'Figma',
+      '나이키 코리아 .COM/APP 운영 (CMS 기반 PDP 업데이트)',
     ],
   },
   {
@@ -37,15 +28,6 @@ export const careers: Career[] = [
       '자사몰 유지보수',
       'XE, 카페24 기반 퍼블리싱',
       '웹 콘텐츠 및 UI/UX 디자인',
-    ],
-    tags: [
-      'HTML5',
-      'CSS3',
-      'jQuery',
-      'XE',
-      'Cafe24',
-      'Photoshop',
-      'Illustrator',
     ],
   },
 ];
@@ -64,21 +46,6 @@ const rawProjects: Omit<Project, 'id'>[] = [
     url: 'https://github.com/jinayeui/panda-market',
     thumbnail: '/images/pandamarket.jpg',
     category: 'personal',
-  },
-  {
-    title: 'To-do List',
-    subtitle: 'React·styled-components',
-    url: 'https://github.com/jinayeui/my-todo-app',
-    thumbnail: '/images/todolist.jpg',
-    category: 'personal'
-  },
-  {
-    title: '리얼EMS',
-    subtitle: '카페24 다국어 쇼핑몰 구축',
-    contribution: '퍼블리싱 90%',
-    url: 'https://foggy-napkin-4b2.notion.site/EMS-3716da1da0118029ab68fe32d9140641?source=copy_link',
-    thumbnail: '/images/realems.jpg',
-    category: 'work',
   },
   {
     title: '세라빔',
@@ -102,10 +69,32 @@ const rawProjects: Omit<Project, 'id'>[] = [
     category: 'work',
   },
   {
+    title: '리얼EMS',
+    subtitle: '카페24 다국어 쇼핑몰 구축',
+    contribution: '퍼블리싱 90%',
+    url: 'https://foggy-napkin-4b2.notion.site/EMS-3716da1da0118029ab68fe32d9140641?source=copy_link',
+    thumbnail: '/images/realems.jpg',
+    category: 'work',
+  },
+  {
+    title: 'To-do List',
+    subtitle: 'React·styled-components',
+    url: 'https://github.com/jinayeui/my-todo-app',
+    thumbnail: '/images/todolist.jpg',
+    category: 'personal'
+  },
+  {
     title: '그랜드하얏트',
-    subtitle: '리디자인·반응형',
+    subtitle: '리디자인·반응형 퍼블리싱',
     url: 'https://jinayeui.github.io/GrandHyatt',
     thumbnail: '/images/grandhyatt.jpg',
+    category: 'personal'
+  },
+  {
+    title: '메리플래닛',
+    subtitle: '리디자인·반응형 퍼블리싱',
+    url: 'https://jinayeui.github.io/merryplanet',
+    thumbnail: '/images/merryplanet.jpg',
     category: 'personal'
   }
 ];

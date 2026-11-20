@@ -11,7 +11,6 @@ export interface Career {
   role: string;
   period: string;
   description: string[];
-  tags: string[];
 }
 
 export type ProjectCategory = 'work' | 'personal';

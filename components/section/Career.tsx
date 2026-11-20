@@ -32,19 +32,6 @@ export default function Career() {
                   </li>
                 ))}
               </ul>
-
-              {career.tags && career.tags.length > 0 && (
-                <ul
-                  className={styles.techStack}
-                  data-aos='fade-left'
-                  data-aos-anchor-placement='bottom-bottom'
-                  data-aos-delay='200'
-                >
-                  {career.tags.map((tech, i) => (
-                    <li key={i}>{tech}</li>
-                  ))}
-                </ul>
-              )}
             </div>
           </article>
         ))}
