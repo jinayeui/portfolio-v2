@@ -83,7 +83,6 @@ export default function About() {
         <div className={styles.skill}>
           <dt>Figma</dt>
           <dt>Photoshop</dt>
-          <dt>Illustrator</dt>
           <dd>
             <ul>
               <li>디자인 시안 기반 정확한 퍼블리싱</li>
