@@ -46,6 +46,7 @@ export default function About() {
           <dd>
             <ul>
               <li>바닐라 자바스크립트 중심 개발</li>
+              <li>이벤트 기반 인터랙션 구현</li>
               <li>성능 최적화를 고려한 코드 작성</li>
               <li>REST API 연동</li>
             </ul>
