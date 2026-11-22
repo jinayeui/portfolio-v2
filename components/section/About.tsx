@@ -77,7 +77,7 @@ export default function About() {
           <dt>Git</dt>
           <dd>
             <ul>
-              <li>Git 기반 버전 관리 및 협업 경험</li>
+              <li>Git 기반 버전 관리 및 협업</li>
             </ul>
           </dd>
         </div>
