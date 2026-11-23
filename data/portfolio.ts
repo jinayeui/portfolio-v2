@@ -35,7 +35,7 @@ export const careers: Career[] = [
 const rawProjects: Omit<Project, 'id'>[] = [
   {
     title: '올리브영',
-    subtitle: '온라인몰 운영',
+    subtitle: '온라인몰 운영 및 제안 퍼블리싱',
     url: 'https://foggy-napkin-4b2.notion.site/3716da1da01180a19635d45220152d55?source=copy_link',
     thumbnail: '/images/oliveyoung.jpg',
     category: 'work',
